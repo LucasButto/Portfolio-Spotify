@@ -1,13 +1,18 @@
+import { BrowserRouter } from "react-router-dom";
+
 import "./App.css";
+
 import Aside from "./Components/Aside";
 import Main from "./Components/Main";
 
 function App() {
   return (
-    <body className="body">
-      <Aside />
-      <Main />
-    </body>
+    <BrowserRouter>
+      <div className="body">
+        <Aside />
+        <Main />
+      </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import CodeRoundedIcon from "@mui/icons-material/CodeRounded";
@@ -11,31 +12,41 @@ const Aside = () => {
   return (
     <>
       <aside className="aside">
+        <h2>Portfolio</h2>
+        <hr />
         <nav className="nav">
           <ul>
             <li>
-              <button>
-                <HomeRoundedIcon />
-                <span>Home</span>
-              </button>
+              <Link to="/home">
+                <div className="link">
+                  <HomeRoundedIcon />
+                  <span>Home</span>
+                </div>
+              </Link>
             </li>
             <li>
-              <button>
-                <CodeRoundedIcon />
-                <span>Projects</span>
-              </button>
+              <Link to="/projects">
+                <div className="link">
+                  <CodeRoundedIcon />
+                  <span>Projects</span>
+                </div>
+              </Link>
             </li>
             <li>
-              <button>
-                <WorkRoundedIcon />
-                <span>Experience</span>
-              </button>
+              <Link to="/experience">
+                <div className="link">
+                  <WorkRoundedIcon />
+                  <span>Experience</span>
+                </div>
+              </Link>
             </li>
             <li>
-              <button>
-                <AlternateEmailRoundedIcon />
-                <span>Contact</span>
-              </button>
+              <Link to="/contact">
+                <div className="link">
+                  <AlternateEmailRoundedIcon />
+                  <span>Contact</span>
+                </div>
+              </Link>
             </li>
           </ul>
         </nav>

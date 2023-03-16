@@ -28,7 +28,7 @@ const TopContainer = () => {
               <GitHubIcon />
             </a>
             <a
-              href="https://www.linkedin.com/in/lucas-butto-0b1b1b1b9/"
+              href="https://www.linkedin.com/in/lucas-butto-8a43a724b/"
               target="_blank"
               rel="noreferrer"
             >
