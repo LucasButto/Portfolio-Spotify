@@ -2,7 +2,7 @@
   flex: 2;
   height: 100vh;
   min-width: 1300px;
-  background-color: #212121;
+  background-color: rgb(18, 18, 18);
   overflow-y: auto;
 }
 

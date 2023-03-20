@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 import TopContainer from "./TopContainer";
+import ProjectDisplay from "../Pages/ProjectDisplay";
 
 import Home from "../Pages/Home";
 import Projects from "../Pages/Projects";
@@ -18,6 +19,7 @@ const Main = () => {
         <Routes>
           <Route path="*" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/project/:id" element={<ProjectDisplay />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

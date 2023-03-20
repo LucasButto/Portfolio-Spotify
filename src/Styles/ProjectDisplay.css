@@ -1,0 +1,105 @@
+.project {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 440px);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.goButtons-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.goBack-button {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  background-color: rgba(61, 61, 61);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.goBack-button:hover {
+  background-color: rgba(61, 61, 61, 0.8);
+  cursor: pointer;
+}
+
+.disabled-button {
+  background-color: rgba(61, 61, 61, 0.5);
+  pointer-events: none;
+}
+.goBack-button > svg {
+  color: #f3f4f3;
+  font-size: 2.5rem;
+}
+
+.img-title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 40px 40px 0 40px;
+  gap: 20px;
+}
+
+.project img {
+  max-width: 400px;
+  max-height: 300px;
+  border-radius: 10px;
+}
+.img-title-container > h3 {
+  color: #ffffff;
+  font-size: 6rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 20px;
+  /*border-bottom: 1px solid #1db954;*/
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 40px;
+  gap: 20px;
+}
+
+.skills-container > h3 {
+  color: #c3c3c3;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.skills-container > hr {
+  width: 100%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    #1db954,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 200px;
+  background-color: red;
+}
+
+.links-containers > a {
+  margin: 0 15px;
+}

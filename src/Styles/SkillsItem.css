@@ -1,0 +1,86 @@
+.item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid #c3c3c3;
+}
+
+.item:hover {
+  border: 1.9px solid rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+.itemShow {
+  border: 1px solid #1db954 !important;
+}
+
+.itemShow:hover {
+  border: 1.9px solid #1db954 !important;
+  transition: 0.3s;
+}
+
+.data {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+  padding: 30px;
+}
+
+.item > span {
+  padding: 0px 30px 30px 30px;
+  font-size: 1.3rem;
+  color: #c3c3c3;
+}
+
+.shown {
+  border: 1px solid #1db954;
+}
+
+.button-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  gap: 30px;
+}
+
+.button-title > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.button-title > button > svg {
+  color: #1db954;
+  font-size: 5rem;
+}
+
+.button-title > button > svg:hover {
+  font-size: 5.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-title > h3 {
+  font-size: 2rem;
+  color: #c3c3c3;
+}
+
+.img-container {
+  display: grid;
+  place-items: center;
+  width: 20%;
+}
+
+.skills-img {
+  width: 100px;
+  height: 100px;
+}
