@@ -1,0 +1,33 @@
+.experience-date {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1db954;
+  margin-bottom: 0.5em;
+}
+
+.img-circle {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.img-circle > svg {
+  font-size: 3rem;
+  color: #dadada;
+}
+
+.work {
+  background-color: #5a3600;
+}
+
+.study {
+  background-color: #3e497a;
+}
+
+.course {
+  background-color: #004d29;
+}
