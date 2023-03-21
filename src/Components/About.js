@@ -1,6 +1,9 @@
 import React from "react";
 import { ProjectList } from "../Helpers/ProjectList";
 
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LaunchIcon from "@mui/icons-material/Launch";
+
 import "../Styles/About.css";
 
 const About = () => {
@@ -36,12 +39,38 @@ const About = () => {
         <h3>Lastest Project</h3>
         <div className="lastest-project-container">
           <img src={lastestProject.image} alt="Project img" />
-          <p>
-            This is a React-based game project where you have to guess the name
-            of a Pokémon from its silhouette. The project comes with custom
-            settings where you can choose the regions you want to play with and
-            it saves your best score in localstorage.
-          </p>
+          <div className="right-container">
+            <p>
+              This is a React-based game project where you have to guess the
+              name of a Pokémon from its silhouette. The project comes with
+              custom settings where you can choose the regions you want to play
+              with and it saves your best score in localstorage.
+            </p>
+            <div className="links">
+              {Boolean(lastestProject.github) && (
+                <a
+                  href={lastestProject.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Visit the repository"
+                >
+                  <span>GITHUB</span> <GitHubIcon />
+                </a>
+              )}
+
+              {Boolean(lastestProject.link) && (
+                <a
+                  href={lastestProject.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Go to the site"
+                >
+                  <span>SITE</span>
+                  <LaunchIcon />
+                </a>
+              )}
+            </div>
+          </div>
         </div>
       </article>
     </div>

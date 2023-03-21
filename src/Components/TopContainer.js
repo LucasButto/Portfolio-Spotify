@@ -24,7 +24,7 @@ const TopContainer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              GITHUB
+              <span>GITHUB</span>
               <GitHubIcon />
             </a>
             <a
@@ -32,7 +32,7 @@ const TopContainer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              LINKEDIN
+              <span>LINKEDIN</span>
               <LinkedInIcon />
             </a>
             <a
@@ -40,7 +40,7 @@ const TopContainer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              EMAIL
+              <span>EMAIL</span>
               <EmailIcon />
             </a>
           </div>

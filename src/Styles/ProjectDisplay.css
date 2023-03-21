@@ -61,8 +61,6 @@
   font-size: 6rem;
   font-weight: 600;
   margin: 0;
-  padding: 20px;
-  /*border-bottom: 1px solid #1db954;*/
 }
 
 .skills-container {
@@ -108,12 +106,12 @@
   gap: 20px;
   width: 100%;
   padding: 10px 20px;
-  background-color: rgba(61, 61, 61, 0.5);
+  background-color: #161616;
   border-radius: 10px;
 }
 
 .skills-list > ul > li:hover {
-  background-color: rgba(61, 61, 61, 0.8);
+  background-color: #272727;
 }
 
 .skills-list > ul > li > p {
@@ -122,8 +120,10 @@
   font-weight: 400;
 }
 
-.links-containers > a {
-  margin: 0 15px;
+.links-containers {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
 }
 
 .links-containers > a > svg {
