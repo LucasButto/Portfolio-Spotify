@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import EmailIcon from "@mui/icons-material/Email";
 import PlayCircleFilledIcon from "@mui/icons-material/PlayCircleFilled";
 import PauseCircleFilledIcon from "@mui/icons-material/PauseCircleFilled";
 import SkipPreviousRoundedIcon from "@mui/icons-material/SkipPreviousRounded";
