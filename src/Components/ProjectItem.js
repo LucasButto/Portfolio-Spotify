@@ -18,7 +18,7 @@ const ProjectItem = ({ image, name, id }) => {
         navigateToTop();
       }}
     >
-      <div className="img-container">
+      <div className="projectImg-container">
         <img src={image} alt="project img" className="projectImg" />
         <div className="play-btn">
           <PlayCircleFilledIcon />

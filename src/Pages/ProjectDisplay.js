@@ -32,51 +32,50 @@ const ProjectDisplay = () => {
       </div>
       <div className="img-title-container">
         <img src={project.image} alt="Project img" />
-        <h3> {project.name}</h3>
+        <div className="title-links">
+          <h3> {project.name}</h3>
+          <div className="links-containers">
+            {Boolean(project.github) && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+                title="Visit the repository"
+              >
+                <GitHubIcon />
+              </a>
+            )}
+
+            {Boolean(project.link) && (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+                title="Go to the site"
+              >
+                <LaunchIcon />
+              </a>
+            )}
+          </div>
+        </div>
       </div>
 
       {Boolean(project.skills) && (
         <div className="skills-container">
           <h3>Skills used:</h3>
           <hr />
-          {project.skills.map((skill, index) => (
-            <div className="skills-list">
+          <div className="skills-list">
+            {project.skills.map((skill, index) => (
               <ul key={index}>
-                <li>
-                  <p className="skill">
-                    {index + 1}
-                    {skill}
-                  </p>
+                <li className="skill">
+                  <p>{index + 1}</p>
+                  <p>{skill}</p>
                 </li>
               </ul>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       )}
-
-      <div className="links-containers">
-        {Boolean(project.github) && (
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noreferrer"
-            title="Visit the repository"
-          >
-            <GitHubIcon />
-          </a>
-        )}
-
-        {Boolean(project.link) && (
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noreferrer"
-            title="Go to the site"
-          >
-            <LaunchIcon />
-          </a>
-        )}
-      </div>
     </div>
   );
 };
