@@ -14,6 +14,7 @@ const Contact = () => {
   const [inputMessage, setInputMessage] = useState("");
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("Send the email");
 
   const sendEmailHandler = (e) => {
     setLoading(true);
@@ -30,18 +31,25 @@ const Contact = () => {
     if (Object.entries(validate).length === 0) {
       emailjs
         .sendForm(
-          "service_dp3aw3l",
+          "service_cp93nb4",
           "template_7egq351",
           e.target,
           "_dTu7J3vq-AlfVvXa"
         )
-        .then((response) => console.log(response))
-        .catch((error) => console.log(error));
+        .then((response) => {
+          console.log(response);
+          setMessage("Email sent successfully!");
+          setLoading(false);
+        })
+        .catch((error) => {
+          console.log(error);
+          setMessage("An error occurred, try again later.");
+          setLoading(false);
+        });
       setInputName("");
       setInputEmail("");
       setInputMessage("");
     }
-    setLoading(false);
   };
 
   const validateDataForm = (form) => {
@@ -66,11 +74,19 @@ const Contact = () => {
     return emailRegex.test(email);
   };
 
+  const enterPressed = (e) => {
+    if (e.key === "Enter") {
+      sendEmailHandler(e);
+    }
+  };
+
+  window.onkeydown = enterPressed;
+
   return (
     <>
       <h2 className="projectsTitle">CONTACT</h2>
       <div className="contact-form">
-        <form className="form-horizontal">
+        <form className="form-horizontal" onSubmit={sendEmailHandler}>
           <div className="form-inputs">
             <input
               type="text"
@@ -108,7 +124,7 @@ const Contact = () => {
                 <SkipPreviousRoundedIcon />
               </button>
 
-              <button className="send-button" onClick={sendEmailHandler}>
+              <button className="send-button">
                 {loading ? <PauseCircleFilledIcon /> : <PlayCircleFilledIcon />}
               </button>
 
@@ -116,7 +132,7 @@ const Contact = () => {
                 <SkipNextRoundedIcon />
               </button>
             </div>
-            <span>Send the email</span>
+            <span>{message}</span>
           </div>
         </form>
       </div>
