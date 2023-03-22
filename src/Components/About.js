@@ -40,12 +40,7 @@ const About = () => {
         <div className="lastest-project-container">
           <img src={lastestProject.image} alt="Project img" />
           <div className="right-container">
-            <p>
-              This is a React-based game project where you have to guess the
-              name of a Pokémon from its silhouette. The project comes with
-              custom settings where you can choose the regions you want to play
-              with and it saves your best score in localstorage.
-            </p>
+            <p>{lastestProject.description}</p>
             <div className="links">
               {Boolean(lastestProject.github) && (
                 <a

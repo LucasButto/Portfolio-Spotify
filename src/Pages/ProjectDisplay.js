@@ -67,7 +67,7 @@ const ProjectDisplay = () => {
           <div className="skills-list">
             {project.skills.map((skill, index) => (
               <ul key={index}>
-                <li className="skill">
+                <li className={project.styles[index] + " skill"}>
                   <p>{index + 1}</p>
                   <p>{skill}</p>
                 </li>

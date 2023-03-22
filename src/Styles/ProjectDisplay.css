@@ -110,14 +110,51 @@
   border-radius: 10px;
 }
 
-.skills-list > ul > li:hover {
+.skill:hover {
   background-color: #272727;
 }
 
-.skills-list > ul > li > p {
+.react:hover {
+  background-color: #61dafb;
+}
+
+.html:hover {
+  background-color: #e34c26;
+}
+
+.css:hover {
+  background-color: #264de4;
+}
+
+.javascript:hover {
+  background-color: #f7df1e;
+}
+
+.bootstrap:hover {
+  background-color: #563d7c;
+}
+
+.firebase:hover {
+  background-color: #ffca28;
+}
+
+.dotnet:hover {
+  background-color: #5c2d91;
+}
+
+.mysql:hover {
+  background-color: #4479a1;
+}
+
+.skill p {
   color: #c3c3c3;
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+.skill:hover > p {
+  color: black;
+  font-weight: 900;
 }
 
 .links-containers {
