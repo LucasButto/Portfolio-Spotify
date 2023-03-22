@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  max-width: 1200px;
-  min-width: 800px;
+  width: 100%;
   margin: 30px 0;
   gap: 20px;
   padding: 0 30px;
@@ -59,4 +58,104 @@ article > p > span {
   font-size: 1.3rem;
   font-weight: 400;
   color: #c3c3c3;
+}
+
+@media screen and (min-width: 1440px) {
+  .articles-containers {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  article > h3 {
+    font-size: 1.5rem;
+  }
+
+  article > p {
+    font-size: 1.1rem;
+  }
+
+  .lastest-project-container > img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .right-container > p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  article > h3 {
+    font-size: 1.5rem;
+  }
+
+  article > p {
+    font-size: 1.1rem;
+  }
+
+  .lastest-project-container > img {
+    width: 250px;
+    height: 150px;
+  }
+
+  .right-container > p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  article > h3 {
+    font-size: 1.5rem;
+  }
+
+  article > p {
+    font-size: 1.1rem;
+  }
+
+  .lastest-project-container {
+    flex-direction: column;
+  }
+
+  .lastest-project-container > img {
+    margin: auto;
+    width: 350px;
+    height: 250px;
+  }
+
+  .right-container > p {
+    font-size: 1.1rem;
+  }
+
+  .right-container > .links {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  article > h3 {
+    font-size: 1.5rem;
+  }
+
+  article > p {
+    font-size: 1.1rem;
+  }
+
+  .lastest-project-container {
+    flex-direction: column;
+  }
+
+  .lastest-project-container > img {
+    margin: auto;
+    width: 300px;
+    height: 200px;
+  }
+
+  .right-container > p {
+    font-size: 1.1rem;
+  }
+
+  .right-container > .links {
+    margin: auto;
+  }
 }

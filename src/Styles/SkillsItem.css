@@ -84,3 +84,32 @@
   width: 100px;
   height: 100px;
 }
+
+@media screen and (max-width: 768px) {
+  .data {
+    padding: 20px 50px 20px 20px;
+  }
+
+  .button-title > h3 {
+    font-size: 1.5rem;
+  }
+
+  .img-container > img {
+    width: 80px;
+    height: 80px;
+  }
+  .button-title > button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .button-title > button > svg {
+    font-size: 4rem;
+  }
+
+  .button-title > button > svg:hover {
+    font-size: 4.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}

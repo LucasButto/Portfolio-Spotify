@@ -56,6 +56,15 @@
   max-height: 300px;
   border-radius: 10px;
 }
+
+.title-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
 .title-links > h3 {
   color: #ffffff;
   font-size: 6rem;
@@ -172,4 +181,182 @@
 .links-containers > a > svg:hover {
   color: #1db954;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .goBack-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .goBack-button > svg {
+    font-size: 2rem;
+  }
+
+  .project img {
+    max-width: 300px;
+    max-height: 200px;
+  }
+
+  .title-links > h3 {
+    font-size: 3rem;
+  }
+
+  .links-containers > a > svg {
+    font-size: 3rem;
+  }
+
+  .skills-container > hr {
+    width: 100%;
+  }
+
+  .skills-list {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .goBack-button {
+    width: 35px;
+    height: 35px;
+  }
+
+  .goBack-button > svg {
+    font-size: 2rem;
+  }
+
+  .project img {
+    max-width: 250px;
+    max-height: 125px;
+  }
+
+  .title-links > h3 {
+    font-size: 2rem;
+  }
+
+  .links-containers > a > svg {
+    font-size: 2rem;
+  }
+
+  .skills-container > h3 {
+    font-size: 1.5rem;
+  }
+
+  .skills-container > hr {
+    width: 100%;
+  }
+
+  .skills-list {
+    width: 100%;
+  }
+
+  .skill p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .goBack-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .goBack-button > svg {
+    font-size: 1.5rem;
+  }
+
+  .img-title-container {
+    flex-direction: column;
+  }
+
+  .project img {
+    max-width: 400px;
+    max-height: 250px;
+  }
+
+  .title-links {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .links-containers {
+    gap: 50px;
+  }
+
+  .title-links > h3 {
+    font-size: 4rem;
+  }
+
+  .links-containers > a > svg {
+    font-size: 4rem;
+  }
+
+  .skills-container > h3 {
+    font-size: 1.3rem;
+  }
+
+  .skills-container > hr {
+    width: 100%;
+  }
+
+  .skills-list {
+    width: 100%;
+  }
+
+  .skill p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .goBack-button {
+    width: 35px;
+    height: 35px;
+  }
+
+  .goBack-button > svg {
+    font-size: 1.5rem;
+  }
+
+  .img-title-container {
+    flex-direction: column;
+  }
+
+  .project img {
+    max-width: 300px;
+    max-height: 200px;
+  }
+
+  .title-links {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .links-containers {
+    gap: 50px;
+  }
+
+  .title-links > h3 {
+    font-size: 2.5rem;
+  }
+
+  .links-containers > a > svg {
+    font-size: 3rem;
+  }
+
+  .skills-container > h3 {
+    font-size: 1.3rem;
+  }
+
+  .skills-container > hr {
+    width: 100%;
+  }
+
+  .skills-list {
+    width: 100%;
+  }
+
+  .skill p {
+    font-size: 1.2rem;
+  }
 }

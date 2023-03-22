@@ -11,7 +11,16 @@ import AlternateEmailRoundedIcon from "@mui/icons-material/AlternateEmailRounded
 import "../Styles/Aside.css";
 
 const Aside = () => {
-  const { aboutClickHandler } = useContext(PathContext);
+  const {
+    homeClickHandler,
+    homeStyles,
+    projectsClickHandler,
+    projectsStyles,
+    experienceClickHandler,
+    experienceStyles,
+    contactClickHandler,
+    contactStyles,
+  } = useContext(PathContext);
   return (
     <>
       <aside className="aside">
@@ -20,32 +29,32 @@ const Aside = () => {
         <nav className="nav">
           <ul>
             <li>
-              <Link to="/home" onClick={aboutClickHandler}>
-                <div className="link">
+              <Link to="/home" onClick={homeClickHandler}>
+                <div className={homeStyles}>
                   <HomeRoundedIcon />
                   <span>Home</span>
                 </div>
               </Link>
             </li>
             <li>
-              <Link to="/projects">
-                <div className="link">
+              <Link to="/projects" onClick={projectsClickHandler}>
+                <div className={projectsStyles}>
                   <CodeRoundedIcon />
                   <span>Projects</span>
                 </div>
               </Link>
             </li>
             <li>
-              <Link to="/experience">
-                <div className="link">
+              <Link to="/experience" onClick={experienceClickHandler}>
+                <div className={experienceStyles}>
                   <WorkRoundedIcon />
                   <span>Experience</span>
                 </div>
               </Link>
             </li>
             <li>
-              <Link to="/contact">
-                <div className="link">
+              <Link to="/contact" onClick={contactClickHandler}>
+                <div className={contactStyles}>
                   <AlternateEmailRoundedIcon />
                   <span>Contact</span>
                 </div>

@@ -1,3 +1,7 @@
+.button-title {
+  width: 100%;
+}
+
 .experience-date {
   font-size: 1.5rem;
   font-weight: 600;
@@ -30,4 +34,20 @@
 
 .course {
   background-color: #004d29;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .experience-title {
+    font-size: 1.5rem;
+  }
+
+  .experience-date {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .experience-title {
+    font-size: 1.4rem;
+  }
 }

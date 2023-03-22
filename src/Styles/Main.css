@@ -1,9 +1,9 @@
 .main {
-  flex: 2;
   height: 100vh;
-  min-width: 1300px;
+  width: 75%;
   background-color: rgb(18, 18, 18);
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /*
@@ -24,4 +24,12 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #1db954;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100%;
+    height: auto;
+    margin-bottom: 75px;
+  }
 }
