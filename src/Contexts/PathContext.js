@@ -3,6 +3,7 @@ import { useState, createContext, useEffect } from "react";
 const PathContext = createContext();
 
 const PathProvider = ({ children }) => {
+  const currentPath = window.location.pathname;
   const [aboutStyles, setAboutStyles] = useState("link-home");
   const [skillsStyles, setSkillsStyles] = useState("link-home");
   const [homeStyles, setHomeStyles] = useState("link");
@@ -11,7 +12,13 @@ const PathProvider = ({ children }) => {
   const [contactStyles, setContactStyles] = useState("link");
 
   useEffect(() => {
-    homeClickHandler();
+    if (currentPath === "/") homeClickHandler();
+    if (currentPath === "/home") homeClickHandler();
+    if (currentPath === "/about") aboutClickHandler();
+    if (currentPath === "/skills") skillsClickHandler();
+    if (currentPath === "/projects") projectsClickHandler();
+    if (currentPath === "/experience") experienceClickHandler();
+    if (currentPath === "/contact") contactClickHandler();
   }, []);
 
   const navigateToTop = () => {
@@ -30,12 +37,14 @@ const PathProvider = ({ children }) => {
     navigateToTop();
     setAboutStyles("current link-home");
     setSkillsStyles("link-home");
+    setHomeStyles("current-nav link");
   };
 
   const skillsClickHandler = () => {
     navigateToTop();
     setAboutStyles("link-home");
     setSkillsStyles("current link-home");
+    setHomeStyles("current-nav link");
   };
 
   const homeClickHandler = () => {
