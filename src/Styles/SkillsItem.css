@@ -113,3 +113,30 @@
     transition: 0.3s;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .data {
+    padding: 20px 20px 20px 20px;
+  }
+
+  .button-title > h3 {
+    font-size: 1.2rem;
+  }
+
+  .img-container > img {
+    width: 60px;
+    height: 60px;
+  }
+  .button-title > button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .button-title > button > svg {
+    font-size: 3rem;
+  }
+
+  .button-title > button > svg:hover {
+    font-size: 3.5rem;
+  }
+}

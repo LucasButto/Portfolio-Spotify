@@ -102,10 +102,11 @@
     color: #1db954;
   }
 
+  .links > a:hover {
+    background-color: transparent;
+  }
+
   .links > a > span {
     display: none;
   }
-}
-
-@media screen and (max-width: 480px) {
 }
