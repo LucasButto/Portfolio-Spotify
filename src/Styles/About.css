@@ -146,12 +146,12 @@ article > p > span {
 
 @media screen and (max-width: 480px) {
   article > h3 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin: auto;
   }
 
   article > p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .lastest-project-container {
