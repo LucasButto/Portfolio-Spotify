@@ -113,6 +113,7 @@ article > p > span {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   article > h3 {
     font-size: 1.5rem;
+    margin: auto;
   }
 
   article > p {
@@ -121,6 +122,11 @@ article > p > span {
 
   .lastest-project-container {
     flex-direction: column;
+    gap: 20px;
+  }
+
+  .right-container {
+    width: 100%;
   }
 
   .lastest-project-container > img {
@@ -141,6 +147,7 @@ article > p > span {
 @media screen and (max-width: 480px) {
   article > h3 {
     font-size: 1.5rem;
+    margin: auto;
   }
 
   article > p {
@@ -149,12 +156,17 @@ article > p > span {
 
   .lastest-project-container {
     flex-direction: column;
+    gap: 20px;
   }
 
   .lastest-project-container > img {
     margin: auto;
-    width: 280px;
-    height: 200px;
+    width: 250px;
+    height: 190px;
+  }
+
+  .right-container {
+    width: 100%;
   }
 
   .right-container > p {
