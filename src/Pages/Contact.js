@@ -16,6 +16,12 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("Send the email");
 
+  const cleanInputs = () => {
+    setInputName("");
+    setInputEmail("");
+    setInputMessage("");
+  };
+
   const sendEmailHandler = (e) => {
     setLoading(true);
     e.preventDefault();
@@ -40,15 +46,16 @@ const Contact = () => {
           console.log(response);
           setMessage("Email sent successfully!");
           setLoading(false);
+          cleanInputs();
         })
         .catch((error) => {
           console.log(error);
           setMessage("An error occurred, try again later.");
           setLoading(false);
+          cleanInputs();
         });
-      setInputName("");
-      setInputEmail("");
-      setInputMessage("");
+    } else {
+      setLoading(false);
     }
   };
 
