@@ -18,9 +18,9 @@ The portfolio was built using React DOM, which makes it highly interactive and r
 
 1. Clone the repository
 2. Install the project dependencies using the command 
-- > npm install
+    > npm install
 3. Run the project using the command 
-- > npm start
+    > npm start
 4. Navigate through the portfolio and explore the different pages.
 
 ## Contribution
