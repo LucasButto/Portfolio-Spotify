@@ -3,7 +3,6 @@ import { useState, createContext, useEffect } from "react";
 const PathContext = createContext();
 
 const PathProvider = ({ children }) => {
-  const currentPath = window.location.pathname;
   const [aboutStyles, setAboutStyles] = useState("link-home");
   const [skillsStyles, setSkillsStyles] = useState("link-home");
   const [homeStyles, setHomeStyles] = useState("link");
@@ -12,48 +11,51 @@ const PathProvider = ({ children }) => {
   const [contactStyles, setContactStyles] = useState("link");
 
   useEffect(() => {
-    if (currentPath === "/") {
-      setAboutStyles("current link-home");
-      setHomeStyles("current link");
-    }
+    homeClickHandler();
   }, []);
 
+  const navigateToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
+  const clearStyles = () => {
+    navigateToTop();
+    setHomeStyles("link");
+    setProjectsStyles("link");
+    setExperienceStyles("link");
+    setContactStyles("link");
+  };
+
   const aboutClickHandler = () => {
+    navigateToTop();
     setAboutStyles("current link-home");
     setSkillsStyles("link-home");
   };
 
   const skillsClickHandler = () => {
+    navigateToTop();
     setAboutStyles("link-home");
     setSkillsStyles("current link-home");
   };
 
   const homeClickHandler = () => {
-    setHomeStyles("current-nav link");
-    setProjectsStyles("link");
-    setExperienceStyles("link");
-    setContactStyles("link");
+    clearStyles();
     aboutClickHandler();
+    setHomeStyles("current-nav link");
   };
 
   const projectsClickHandler = () => {
-    setHomeStyles("link");
+    clearStyles();
     setProjectsStyles("current-nav link");
-    setExperienceStyles("link");
-    setContactStyles("link");
   };
 
   const experienceClickHandler = () => {
-    setHomeStyles("link");
-    setProjectsStyles("link");
+    clearStyles();
     setExperienceStyles("current-nav link");
-    setContactStyles("link");
   };
 
   const contactClickHandler = () => {
-    setHomeStyles("link");
-    setProjectsStyles("link");
-    setExperienceStyles("link");
+    clearStyles();
     setContactStyles("current-nav link");
   };
 
