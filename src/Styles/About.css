@@ -74,7 +74,7 @@ article > p > span {
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
   article > h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   article > p {
@@ -93,7 +93,7 @@ article > p > span {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   article > h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   article > p {
@@ -112,7 +112,7 @@ article > p > span {
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   article > h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin: auto;
   }
 
@@ -146,7 +146,7 @@ article > p > span {
 
 @media screen and (max-width: 480px) {
   article > h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin: auto;
   }
 
