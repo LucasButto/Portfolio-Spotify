@@ -16,12 +16,12 @@ The portfolio was built using React DOM, which makes it highly interactive and r
 
 ## How to Use the Project
 
-1 Clone the repository
-2 Install the project dependencies using the command 
-> npm install
-3 Run the project using the command 
-> npm start
-4 Navigate through the portfolio and explore the different pages.
+1. Clone the repository
+2. Install the project dependencies using the command 
+    > npm install
+3. Run the project using the command 
+    > npm start
+4. Navigate through the portfolio and explore the different pages.
 
 ## Contribution
 
@@ -34,7 +34,7 @@ This project was developed by me, Butto Lucas. If you have any questions or comm
 ## Screenshot
 
 <p align="center">
-    <img src='./src/img/proj.jpg' width="600" height="400">
+    <img src='./src/Img/proj.jpg' width="600" height="400">
 </p>
 
 ## Test Project
