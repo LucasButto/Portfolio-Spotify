@@ -6,10 +6,10 @@ const PathProvider = ({ children }) => {
   const currentPath = window.location.pathname;
   const [aboutStyles, setAboutStyles] = useState("link-home");
   const [skillsStyles, setSkillsStyles] = useState("link-home");
-  const [homeStyles, setHomeStyles] = useState("link");
-  const [projectsStyles, setProjectsStyles] = useState("link");
-  const [experienceStyles, setExperienceStyles] = useState("link");
-  const [contactStyles, setContactStyles] = useState("link");
+  const [homeStyles, setHomeStyles] = useState("top-link");
+  const [projectsStyles, setProjectsStyles] = useState("top-link");
+  const [experienceStyles, setExperienceStyles] = useState("top-link");
+  const [contactStyles, setContactStyles] = useState("top-link");
 
   useEffect(() => {
     if (currentPath === "/") homeClickHandler();
@@ -27,45 +27,45 @@ const PathProvider = ({ children }) => {
 
   const clearStyles = () => {
     navigateToTop();
-    setHomeStyles("link");
-    setProjectsStyles("link");
-    setExperienceStyles("link");
-    setContactStyles("link");
+    setHomeStyles("top-link");
+    setProjectsStyles("top-link");
+    setExperienceStyles("top-link");
+    setContactStyles("top-link");
   };
 
   const aboutClickHandler = () => {
     navigateToTop();
     setAboutStyles("current link-home");
     setSkillsStyles("link-home");
-    setHomeStyles("current-nav link");
+    setHomeStyles("current-nav top-link");
   };
 
   const skillsClickHandler = () => {
     navigateToTop();
     setAboutStyles("link-home");
     setSkillsStyles("current link-home");
-    setHomeStyles("current-nav link");
+    setHomeStyles("current-nav top-link");
   };
 
   const homeClickHandler = () => {
     clearStyles();
     aboutClickHandler();
-    setHomeStyles("current-nav link");
+    setHomeStyles("current-nav top-link");
   };
 
   const projectsClickHandler = () => {
     clearStyles();
-    setProjectsStyles("current-nav link");
+    setProjectsStyles("current-nav top-link");
   };
 
   const experienceClickHandler = () => {
     clearStyles();
-    setExperienceStyles("current-nav link");
+    setExperienceStyles("current-nav top-link");
   };
 
   const contactClickHandler = () => {
     clearStyles();
-    setContactStyles("current-nav link");
+    setContactStyles("current-nav top-link");
   };
 
   return (

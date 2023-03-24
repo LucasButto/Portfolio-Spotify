@@ -1,5 +1,5 @@
 .aside {
-  background-color: #181818;
+  background-color: #090909;
   height: 100vh;
   width: 25%;
   transition: 0.5s;
@@ -36,7 +36,7 @@
   text-decoration: none;
 }
 
-.link {
+.top-link {
   background-color: transparent;
   display: flex;
   flex-direction: row;
@@ -51,7 +51,7 @@
   border: none;
 }
 
-.link:hover {
+.top-link:hover {
   background-color: #1db954;
   color: #efefef;
   cursor: pointer;
@@ -60,6 +60,14 @@
 .current-nav {
   background-color: #1db954;
   color: #efefef;
+}
+
+.top-link > svg {
+  font-size: 2.4rem;
+}
+
+.top-link > span {
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 1367px) {
@@ -78,6 +86,14 @@
   .aside > h2 {
     font-size: 3.3rem;
   }
+
+  .top-link > span {
+    font-size: 1.2rem;
+  }
+
+  .top-link > svg {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -85,8 +101,12 @@
     font-size: 2.4rem;
   }
 
-  .link {
+  .top-link > span {
     font-size: 1rem;
+  }
+
+  .top-link > svg {
+    font-size: 1.2rem;
   }
 }
 
@@ -125,24 +145,24 @@
     height: 75px;
   }
 
-  a > .link {
+  a > .top-link {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
 
-  a > .link > svg {
+  a > .top-link > svg {
     font-size: 1.8rem;
   }
 
-  a > .link > span {
+  a > .top-link > span {
     font-size: 1.2rem;
   }
 }
 
 @media screen and (max-width: 480px) {
-  a > .link > span {
+  a > .top-link > span {
     display: none;
   }
 }

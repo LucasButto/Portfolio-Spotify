@@ -85,6 +85,64 @@
   height: 100px;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .data {
+    padding: 20px 30px 20px 20px;
+  }
+
+  .button-title > h3 {
+    font-size: 1.5rem;
+  }
+
+  .img-container > img {
+    width: 70px;
+    height: 70px;
+  }
+  .button-title > button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .button-title > button > svg {
+    font-size: 4rem;
+  }
+
+  .button-title > button > svg:hover {
+    font-size: 4.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .data {
+    padding: 20px 30px 20px 20px;
+  }
+
+  .button-title > h3 {
+    font-size: 1.5rem;
+  }
+
+  .img-container > img {
+    width: 70px;
+    height: 70px;
+  }
+  .button-title > button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .button-title > button > svg {
+    font-size: 4rem;
+  }
+
+  .button-title > button > svg:hover {
+    font-size: 4.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .data {
     padding: 20px 50px 20px 20px;

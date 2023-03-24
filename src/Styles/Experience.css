@@ -46,8 +46,28 @@
   }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .experience-title {
+    font-size: 1.3rem;
+  }
+
+  .experience-date {
+    font-size: 1.1rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .experience-title {
     font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .experience-title {
+    font-size: 1.2rem;
+  }
+
+  .experience-date {
+    font-size: 1rem;
   }
 }
