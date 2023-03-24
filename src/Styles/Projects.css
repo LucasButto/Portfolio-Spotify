@@ -28,11 +28,11 @@
 
 @media screen and (max-width: 768px) {
   .projects {
-    padding: 0;
+    padding-left: 0;
+    padding-bottom: 40px;
   }
 
   .projectList {
     width: 100vw;
-    margin-bottom: 75px;
   }
 }

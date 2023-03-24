@@ -62,27 +62,37 @@
   color: #efefef;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (min-width: 1367px) {
   .aside > h2 {
-    font-size: 5rem;
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1366px) {
+  .aside > h2 {
+    font-size: 3.9rem;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
   .aside > h2 {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   .aside > h2 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
+  }
+
+  .link {
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .aside {
-    z-index: 100;
+    z-index: 50;
     position: fixed;
     bottom: 0;
     width: 100%;
