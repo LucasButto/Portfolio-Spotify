@@ -1,33 +1,73 @@
-import Proj1 from "./SkillsImgs/1.png";
-import Proj2 from "./SkillsImgs/2.png";
-import Proj3 from "./SkillsImgs/3.png";
-import Proj4 from "./SkillsImgs/4.png";
-import Proj5 from "./SkillsImgs/5.png";
+import html from "./Logos/html.png";
+import css from "./Logos/css.png";
+import javascript from "./Logos/javascript.png";
+import react from "./Logos/react.png";
+import bootstrap from "./Logos/bootstrap.png";
+import netcore from "./Logos/netcore.png";
+import mysql from "./Logos/mysql.png";
+import python from "./Logos/python.png";
+import c from "./Logos/c.png";
+import csharp from "./Logos/csharp.png";
+import git from "./Logos/git.png";
+import github from "./Logos/github.png";
+import visualstudiocode from "./Logos/visualstudiocode.png";
+import visualstudio2022 from "./Logos/visualstudio2022.png";
 
 export const SkillsList = [
   {
-    title: "Front-End",
-    skills: "- HTML, CSS, JavaScript, ReactJS, NPM, BootStrap.",
-    image: Proj1,
+    title: "HTML",
+    image: html,
   },
   {
-    title: "Back-End",
-    skills: "- .NET, MySQL",
-    image: Proj2,
+    title: "CSS",
+    image: css,
   },
   {
-    title: "Programming Languages",
-    skills: "- JavaScript, Python, C#, C",
-    image: Proj3,
+    title: "JavaScript",
+    image: javascript,
   },
   {
-    title: "Tools",
-    skills: "- Git, GitHub, Visual Studio 2022, Visual Studio Code",
-    image: Proj4,
+    title: "React",
+    image: react,
   },
   {
-    title: "Languajes",
-    skills: "- Spanish, English, Italian",
-    image: Proj5,
+    title: "Bootstrap",
+    image: bootstrap,
+  },
+  {
+    title: ".NET Core",
+    image: netcore,
+  },
+  {
+    title: "MySQL",
+    image: mysql,
+  },
+  {
+    title: "Python",
+    image: python,
+  },
+  {
+    title: "C",
+    image: c,
+  },
+  {
+    title: "C#",
+    image: csharp,
+  },
+  {
+    title: "Git",
+    image: git,
+  },
+  {
+    title: "GitHub",
+    image: github,
+  },
+  {
+    title: "Visual Studio Code",
+    image: visualstudiocode,
+  },
+  {
+    title: "Visual Studio 2022",
+    image: visualstudio2022,
   },
 ];

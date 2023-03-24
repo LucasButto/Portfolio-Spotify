@@ -1,5 +1,87 @@
-.button-title {
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 100%;
+  gap: 30px 0;
+  padding: 0 30px;
+  margin-bottom: 30px;
+}
+
+.item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid #c3c3c3;
+}
+
+.item:hover {
+  border: 1.9px solid rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+.itemShow {
+  border: 1px solid #1db954 !important;
+}
+
+.itemShow:hover {
+  border: 1.9px solid #1db954 !important;
+  transition: 0.3s;
+}
+
+.data {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+  padding: 30px;
+}
+
+.item > span {
+  padding: 0px 30px 30px 30px;
+  font-size: 1.3rem;
+  color: #c3c3c3;
+}
+
+.shown {
+  border: 1px solid #1db954;
+}
+
+.button-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+}
+
+.button-title > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.button-title > button > svg {
+  color: #1db954;
+  font-size: 5rem;
+}
+
+.button-title > button > svg:hover {
+  font-size: 5.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-title > h3 {
+  font-size: 2rem;
+  color: #c3c3c3;
 }
 
 .experience-date {
@@ -36,38 +118,122 @@
   background-color: #004d29;
 }
 
+@media screen and (min-width: 1440px) {
+  .list {
+    width: 80%;
+  }
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
-  .experience-title {
+  .data {
+    padding: 20px 30px 20px 20px;
+  }
+
+  .button-title > h3 {
     font-size: 1.5rem;
   }
 
-  .experience-date {
-    font-size: 1.2rem;
+  .img-container > img {
+    width: 70px;
+    height: 70px;
+  }
+  .button-title > button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .button-title > button > svg {
+    font-size: 4rem;
+  }
+
+  .button-title > button > svg:hover {
+    font-size: 4.5rem;
+    cursor: pointer;
+    transition: 0.3s;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
-  .experience-title {
-    font-size: 1.3rem;
+  .data {
+    padding: 20px 30px 20px 20px;
   }
 
-  .experience-date {
-    font-size: 1.1rem;
+  .button-title > h3 {
+    font-size: 1.5rem;
+  }
+
+  .img-container > img {
+    width: 70px;
+    height: 70px;
+  }
+  .button-title > button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .button-title > button > svg {
+    font-size: 4rem;
+  }
+
+  .button-title > button > svg:hover {
+    font-size: 4.5rem;
+    cursor: pointer;
+    transition: 0.3s;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .experience-title {
-    font-size: 1.4rem;
+  .data {
+    padding: 20px 50px 20px 20px;
+  }
+
+  .button-title > h3 {
+    font-size: 1.5rem;
+  }
+
+  .img-container > img {
+    width: 80px;
+    height: 80px;
+  }
+  .button-title > button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .button-title > button > svg {
+    font-size: 4rem;
+  }
+
+  .button-title > button > svg:hover {
+    font-size: 4.5rem;
+    cursor: pointer;
+    transition: 0.3s;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .experience-title {
+  .data {
+    padding: 20px 20px 20px 20px;
+  }
+
+  .button-title > h3 {
     font-size: 1.2rem;
   }
 
-  .experience-date {
-    font-size: 1rem;
+  .img-container > img {
+    width: 60px;
+    height: 60px;
+  }
+  .button-title > button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .button-title > button > svg {
+    font-size: 3rem;
+  }
+
+  .button-title > button > svg:hover {
+    font-size: 3.5rem;
   }
 }

@@ -72,6 +72,27 @@ article > p > span {
   }
 }
 
+@media screen and (min-width: 1201px) and (max-width: 1439px){
+
+  article > h3 {
+    font-size: 1.7rem;
+  }
+
+  article > p {
+    font-size: 1.1rem;
+  }
+
+  .lastest-project-container > img {
+    width: 400px;
+    height: 250px;
+  }
+
+  .right-container > p {
+    font-size: 1.1rem;
+  }
+  
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
   article > h3 {
     font-size: 1.7rem;

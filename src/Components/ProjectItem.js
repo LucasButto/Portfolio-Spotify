@@ -8,8 +8,12 @@ import PlayCircleFilledIcon from "@mui/icons-material/PlayCircleFilled";
 const ProjectItem = ({ image, name, id }) => {
   const navigate = useNavigate();
   const navigateToTop = () => {
+    window.scrollTo({
+      top: 100,
+      left: 100,
+      behavior: "smooth",
+    });
     navigate("/project/" + id);
-    window.scrollTo(0, 0);
   };
   return (
     <div
