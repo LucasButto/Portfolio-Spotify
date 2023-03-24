@@ -1,7 +1,7 @@
 .project {
   position: relative;
   width: 100%;
-  height: calc(100vh - 440px);
+  height: auto;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
