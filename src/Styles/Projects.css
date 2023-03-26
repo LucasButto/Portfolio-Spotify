@@ -26,6 +26,12 @@
   gap: 20px;
 }
 
+@media screen and (min-width: 1440px) {
+  .projects {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .projects {
     padding-left: 0;

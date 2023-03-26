@@ -27,6 +27,12 @@
   gap: 20px;
 }
 
+@media screen and (min-width: 1440px) {
+  .skills {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .skills {
     padding-left: 0;
