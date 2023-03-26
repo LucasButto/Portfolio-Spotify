@@ -39,5 +39,37 @@
   color: #fff;
   font-size: 1.5rem;
   font-weight: 600;
-  margin: 10px 0;
+  margin: 10px;
+}
+
+@media screen and (max-width: 840px) {
+  .skillItem {
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+  }
+
+  .skillImg {
+    width: 70%;
+  }
+
+  .skillTitle {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skillItem {
+    width: 125px;
+    height: 150px;
+    padding: 10px;
+  }
+
+  .skillImg {
+    width: 70%;
+  }
+
+  .skillTitle {
+    font-size: 0.8rem;
+  }
 }
