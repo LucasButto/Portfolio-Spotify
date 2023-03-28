@@ -65,7 +65,7 @@ export const ProjectList = [
     github: "https://github.com/LucasButto/Calculator",
     link: "https://lucasbutto.github.io/Calculator/",
   },
-  {
+  /*{
     name: "Tic Tac Toe",
     image: Proj7,
     skills: ["React.js", "HTML", "CSS", "JavaScript"],
@@ -74,7 +74,7 @@ export const ProjectList = [
     link: "https://lucasbutto.github.io/tic-tac-toe/",
     description:
       "This is a simple calculator application developed in React. With this application, users can perform basic mathematical operations such as addition, subtraction, multiplication, and division.",
-  },
+  },*/
   {
     name: "Pomodoro Timer",
     image: Proj8,
