@@ -9,6 +9,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
 
 import "../Styles/ProjectDisplay.css";
+import "../Styles/LogosHover.css";
 
 const ProjectDisplay = () => {
   const { id } = useParams();

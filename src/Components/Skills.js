@@ -6,7 +6,6 @@ import "../Styles/Skills.css";
 import SkillsItem from "./SkillsItem";
 
 const Skills = () => {
-
   return (
     <>
       <div className="skills">
@@ -16,6 +15,7 @@ const Skills = () => {
               <SkillsItem
                 title={item.title}
                 image={item.image}
+                styles={item.styles}
               />
             );
           })}

@@ -34,7 +34,7 @@ export const ProjectList = [
     name: "CRUD API",
     image: Proj3,
     skills: [".NET Core", "MySQL"],
-    styles: ["dotnet", "mysql"],
+    styles: ["netcore", "mysql"],
     github: "https://github.com/LucasButto/store-management-api",
   },
   {
