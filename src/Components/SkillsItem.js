@@ -1,7 +1,7 @@
 import React from "react";
 
-import "../Styles/LogosHover.css";
 import "../Styles/SkillsItem.css";
+import "../Styles/LogosHover.css";
 
 const SkillsItem = ({ title, image, styles }) => {
   return (

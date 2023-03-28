@@ -1,59 +1,59 @@
 .html:hover {
-  background: rgba(227, 76, 38, 0.5);
+  background: rgba(227, 76, 38, 0.5) !important;
 }
 
 .css:hover {
-  background: rgba(38, 77, 228, 0.5);
+  background: rgba(38, 77, 228, 0.5) !important;
 }
 
 .javascript:hover {
-  background: rgba(247, 223, 30, 0.5);
+  background: rgba(247, 223, 30, 0.5) !important;
 }
 
 .react:hover {
-  background: rgba(97, 218, 251, 0.5);
+  background: rgba(97, 218, 251, 0.5) !important;
 }
 
 .bootstrap:hover {
-  background: rgba(86, 61, 124, 0.5);
+  background: rgba(86, 61, 124, 0.5) !important;
 }
 
 .netcore:hover {
-  background: rgb(92, 41, 146, 0.5);
+  background: rgb(92, 41, 146, 0.5) !important;
 }
 
 .mysql:hover {
-  background: rgb(0, 95, 139, 0.5);
+  background: rgb(0, 95, 139, 0.5) !important;
 }
 
 .python:hover {
-  background: rgb(0, 95, 139, 0.5);
+  background: rgb(0, 95, 139, 0.5) !important;
 }
 
 .c:hover {
-  background: rgb(57, 73, 171, 0.5);
+  background: rgb(57, 73, 171, 0.5) !important;
 }
 
 .csharp:hover {
-  background: rgb(39, 0, 98, 0.5);
+  background: rgb(39, 0, 98, 0.5) !important;
 }
 
 .firebase:hover {
-  background: rgb(255, 202, 40, 0.5);
+  background: rgb(255, 202, 40, 0.5) !important;
 }
 
 .git:hover {
-  background: rgb(240, 81, 51, 0.5);
+  background: rgb(240, 81, 51, 0.5) !important;
 }
 
 .github:hover {
-  background: rgb(13, 38, 54, 0.5);
+  background: rgb(13, 38, 54, 0.5) !important;
 }
 
 .visualstudiocode:hover {
-  background: rgb(0, 95, 139, 0.5);
+  background: rgb(0, 95, 139, 0.5) !important;
 }
 
 .visualstudio2022:hover {
-  background: rgb(178, 93, 183, 0.5);
+  background: rgb(178, 93, 183, 0.5) !important;
 }
