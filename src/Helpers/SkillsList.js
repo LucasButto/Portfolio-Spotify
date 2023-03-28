@@ -66,11 +66,6 @@ export const SkillsList = [
     styles: "skillItem csharp",
   },
   {
-    title: "Firebase",
-    image: firebase,
-    styles: "skillItem firebase",
-  },
-  {
     title: "Git",
     image: git,
     styles: "skillItem git",
@@ -89,5 +84,10 @@ export const SkillsList = [
     title: "Visual Studio 2022",
     image: visualstudio2022,
     styles: "skillItem visualstudio2022",
+  },
+  {
+    title: "Firebase",
+    image: firebase,
+    styles: "skillItem firebase",
   },
 ];
