@@ -24,15 +24,12 @@ const About = () => {
       <article>
         <h3>About Me</h3>
         <p>
-          Hi there, I'm a 23 year old Front-End developer from Argentina with a
-          passion for building dynamic web applications using React. I'm
-          currently studying programming at the National Technological
-          University of Rosario to further enhance my skills and knowledge in
-          the field. When I'm not working on a new project, you can find me
-          hanging out with friends or staying active by doing exercise. With
-          experience in designing and implementing user-friendly interfaces, I'm
-          dedicated to creating efficient and visually appealing applications
-          that enhance the user experience.
+          I'm a 23-year-old Argentine Front-End developer who loves creating
+          dynamic web apps with React. Currently studying programming at the
+          National Technological University of Rosario. When not coding, I enjoy
+          hanging out with friends and exercising. I design and implement
+          user-friendly interfaces to create efficient and visually appealing
+          apps that improve the user experience.
         </p>
       </article>
       <article>
