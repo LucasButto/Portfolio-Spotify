@@ -2,8 +2,7 @@ import React from "react";
 import { SkillsList } from "../Helpers/SkillsList";
 
 import "../Styles/Skills.css";
-
-import SkillsItem from "./SkillsItem";
+import SkillsContainer from "./SkillsContainer";
 
 const Skills = () => {
   return (
@@ -11,13 +10,7 @@ const Skills = () => {
       <div className="skills">
         <div className="skillsList">
           {SkillsList.map((item) => {
-            return (
-              <SkillsItem
-                title={item.title}
-                image={item.image}
-                styles={item.styles}
-              />
-            );
+            return <SkillsContainer title={item.title} skills={item.items} />;
           })}
         </div>
       </div>

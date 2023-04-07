@@ -42,6 +42,38 @@
   margin: 10px;
 }
 
+@media screen and (max-width: 1440px) {
+  .skillItem {
+    width: 175px;
+    height: 225px;
+    padding: 10px;
+  }
+
+  .skillImg {
+    width: 70%;
+  }
+
+  .skillTitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .skillItem {
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+  }
+
+  .skillImg {
+    width: 70%;
+  }
+
+  .skillTitle {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 840px) {
   .skillItem {
     width: 150px;

@@ -16,78 +16,98 @@ import visualstudio2022 from "./Logos/visualstudio2022.png";
 
 export const SkillsList = [
   {
-    title: "HTML",
-    image: html,
-    styles: "skillItem html",
+    title: "Frontend",
+    items: [
+      {
+        title: "HTML",
+        image: html,
+        styles: "skillItem html",
+      },
+      {
+        title: "CSS",
+        image: css,
+        styles: "skillItem css",
+      },
+      {
+        title: "JavaScript",
+        image: javascript,
+        styles: "skillItem javascript",
+      },
+      {
+        title: "React",
+        image: react,
+        styles: "skillItem react",
+      },
+      {
+        title: "Bootstrap",
+        image: bootstrap,
+        styles: "skillItem bootstrap",
+      },
+    ],
   },
   {
-    title: "CSS",
-    image: css,
-    styles: "skillItem css",
+    title: "Backend",
+    items: [
+      {
+        title: ".NET Core",
+        image: netcore,
+        styles: "skillItem netcore",
+      },
+      {
+        title: "MySQL",
+        image: mysql,
+        styles: "skillItem mysql",
+      },
+    ],
   },
   {
-    title: "JavaScript",
-    image: javascript,
-    styles: "skillItem javascript",
+    title: "Programming Languages",
+    items: [
+      {
+        title: "Python",
+        image: python,
+        styles: "skillItem python",
+      },
+      {
+        title: "C",
+        image: c,
+        styles: "skillItem c",
+      },
+      {
+        title: "C#",
+        image: csharp,
+        styles: "skillItem csharp",
+      },
+    ],
   },
   {
-    title: "React",
-    image: react,
-    styles: "skillItem react",
-  },
-  {
-    title: "Bootstrap",
-    image: bootstrap,
-    styles: "skillItem bootstrap",
-  },
-  {
-    title: ".NET Core",
-    image: netcore,
-    styles: "skillItem netcore",
-  },
-  {
-    title: "MySQL",
-    image: mysql,
-    styles: "skillItem mysql",
-  },
-  {
-    title: "Python",
-    image: python,
-    styles: "skillItem python",
-  },
-  {
-    title: "C",
-    image: c,
-    styles: "skillItem c",
-  },
-  {
-    title: "C#",
-    image: csharp,
-    styles: "skillItem csharp",
-  },
-  {
-    title: "Git",
-    image: git,
-    styles: "skillItem git",
-  },
-  {
-    title: "GitHub",
-    image: github,
-    styles: "skillItem github",
-  },
-  {
-    title: "Visual Studio Code",
-    image: visualstudiocode,
-    styles: "skillItem visualstudiocode",
-  },
-  {
-    title: "Visual Studio 2022",
-    image: visualstudio2022,
-    styles: "skillItem visualstudio2022",
-  },
-  {
-    title: "Firebase",
-    image: firebase,
-    styles: "skillItem firebase",
+    title: "Tools",
+    items: [
+      {
+        title: "Git",
+        image: git,
+        styles: "skillItem git",
+      },
+      {
+        title: "GitHub",
+        image: github,
+        styles: "skillItem github",
+      },
+      {
+        title: "Visual Studio Code",
+        image: visualstudiocode,
+        styles: "skillItem visualstudiocode",
+      },
+      {
+        title: "Visual Studio 2022",
+        image: visualstudio2022,
+        styles: "skillItem visualstudio2022",
+      },
+      {
+        title: "Firebase",
+        image: firebase,
+        styles: "skillItem firebase",
+      },
+    ],
   },
 ];

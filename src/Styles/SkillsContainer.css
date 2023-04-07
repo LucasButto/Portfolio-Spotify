@@ -1,0 +1,25 @@
+.main-skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.main-skills-container > h3 {
+  font-weight: 600;
+  color: #1ed760;
+  font-size: 2rem;
+}
+
+.mapped-skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+@media screen and (max-width: 1280px) {
+  .main-skills-container > h3 {
+    font-size: 1.5rem;
+  }
+}
