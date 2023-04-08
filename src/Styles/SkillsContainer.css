@@ -18,8 +18,30 @@
   gap: 30px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1366px) {
   .main-skills-container > h3 {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .main-skills-container > h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-skills-container  {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-skills-container > h3 {
+    font-size: 1.25rem;
+  }
+
+  .mapped-skills {
+    justify-content: center;
+    align-items: center;
   }
 }

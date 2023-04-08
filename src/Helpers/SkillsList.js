@@ -61,7 +61,7 @@ export const SkillsList = [
     ],
   },
   {
-    title: "Programming Languages",
+    title: "Languages",
     items: [
       {
         title: "Python",
