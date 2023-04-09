@@ -66,7 +66,7 @@ article > p > span {
   color: #c3c3c3;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .articles-containers {
     width: 80%;
   }
@@ -75,20 +75,20 @@ article > p > span {
 @media screen and (min-width: 1201px) and (max-width: 1439px){
 
   article > h3 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 
   article > p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .lastest-project-container > img {
-    width: 400px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
   }
 
   .right-container > p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   
 }

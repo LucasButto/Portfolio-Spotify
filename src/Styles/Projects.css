@@ -32,6 +32,12 @@
   }
 }
 
+@media screen and (max-width: 1366px) {
+  .projectList {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }	
+}
+
 @media screen and (max-width: 768px) {
   .projects {
     padding-left: 0;
