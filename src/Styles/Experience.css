@@ -116,6 +116,37 @@
   }
 }
 
+@media screen and (min-width: 1201px) and (max-width: 1366px) {
+  .data {
+    padding: 20px 30px 20px 20px;
+  }
+
+  .button-title > h3 {
+    font-size: 1.5rem;
+  }
+
+  .button-title > button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .button-title > button > svg {
+    font-size: 4rem;
+  }
+
+  .button-title > button > svg:hover {
+    font-size: 4.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .item > span {
+    width: 90%;
+    font-size: 1.1rem;
+  }
+}
+  
+
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
   .data {
     padding: 20px 30px 20px 20px;
