@@ -12,16 +12,6 @@ const About = () => {
   return (
     <div className="articles-containers">
       <article>
-        <h3>About This Website</h3>
-        <p>
-          The design of this website was inspired by <span>Spotify</span>. I
-          have always admired Spotify's UI/UX design, and most of the time when
-          I am programming, I am using the platform. Music plays a huge role in
-          my life as a developer, and with Spotify being such an inspiring tech
-          company, this design seemed very fitting.
-        </p>
-      </article>
-      <article>
         <h3>About Me</h3>
         <p>
           I'm a 23-year-old Argentine Front-End developer who loves creating
@@ -35,7 +25,9 @@ const About = () => {
       <article>
         <h3>Lastest Project</h3>
         <div className="lastest-project-container">
-          <img src={lastestProject.image} alt="Project img" />
+          <div className="img-container">
+            <img src={lastestProject.image} alt="Project img" />
+          </div>
           <div className="right-container">
             <p>{lastestProject.description}</p>
             <div className="links">
@@ -46,7 +38,8 @@ const About = () => {
                   rel="noreferrer"
                   title="Visit the repository"
                 >
-                  <span>GITHUB</span> <GitHubIcon />
+                  <GitHubIcon />
+                  <span>GITHUB</span>
                 </a>
               )}
 
@@ -57,8 +50,8 @@ const About = () => {
                   rel="noreferrer"
                   title="Go to the site"
                 >
-                  <span>SITE</span>
                   <LaunchIcon />
+                  <span>SITE</span>
                 </a>
               )}
             </div>

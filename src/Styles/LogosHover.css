@@ -1,59 +1,74 @@
-.html:hover {
-  background: rgba(227, 76, 38, 0.5) !important;
+.mapped-skills > .html:hover,
+ul > .html:hover {
+  background: rgba(227, 76, 38, 0.5);
 }
 
-.css:hover {
-  background: rgba(38, 77, 228, 0.5) !important;
+.mapped-skills > .css:hover,
+ul > .css:hover {
+  background: rgba(38, 77, 228, 0.5);
 }
 
-.javascript:hover {
-  background: rgba(247, 223, 30, 0.5) !important;
+.mapped-skills > .javascript:hover,
+ul > .javascript:hover {
+  background: rgba(247, 223, 30, 0.5);
 }
 
-.react:hover {
-  background: rgba(97, 218, 251, 0.5) !important;
+.mapped-skills > .react:hover,
+ul > .react:hover {
+  background: rgba(97, 218, 251, 0.5);
 }
 
-.bootstrap:hover {
-  background: rgba(86, 61, 124, 0.5) !important;
+.mapped-skills > .bootstrap:hover,
+ul > .bootstrap:hover {
+  background: rgba(86, 61, 124, 0.5);
 }
 
-.netcore:hover {
-  background: rgb(92, 41, 146, 0.5) !important;
+.mapped-skills > .netcore:hover,
+ul > .netcore:hover {
+  background: rgb(92, 41, 146, 0.5);
 }
 
-.mysql:hover {
-  background: rgb(0, 95, 139, 0.5) !important;
+.mapped-skills > .mysql:hover,
+ul > .mysql:hover {
+  background: rgb(0, 95, 139, 0.5);
 }
 
-.python:hover {
-  background: rgb(0, 95, 139, 0.5) !important;
+.mapped-skills > .python:hover,
+ul > .python:hover {
+  background: rgb(0, 95, 139, 0.5);
 }
 
-.c:hover {
-  background: rgb(57, 73, 171, 0.5) !important;
+.mapped-skills > .c:hover,
+ul > .c:hover {
+  background: rgb(57, 73, 171, 0.5);
 }
 
-.csharp:hover {
-  background: rgb(39, 0, 98, 0.5) !important;
+.mapped-skills > .csharp:hover,
+ul > .csharp:hover {
+  background: rgb(39, 0, 98, 0.5);
 }
 
-.firebase:hover {
-  background: rgb(255, 202, 40, 0.5) !important;
+.mapped-skills > .firebase:hover,
+ul > .firebase:hover {
+  background: rgb(255, 202, 40, 0.5);
 }
 
-.git:hover {
-  background: rgb(240, 81, 51, 0.5) !important;
+.mapped-skills > .git:hover,
+ul > .git:hover {
+  background: rgb(240, 81, 51, 0.5);
 }
 
-.github:hover {
-  background: rgb(13, 38, 54, 0.5) !important;
+.mapped-skills > .github:hover,
+ul > .github:hover {
+  background: rgb(13, 38, 54, 0.5);
 }
 
-.visualstudiocode:hover {
-  background: rgb(0, 95, 139, 0.5) !important;
+.mapped-skills > .visualstudiocode:hover,
+ul > .visualstudiocode:hover {
+  background: rgb(0, 95, 139, 0.5);
 }
 
-.visualstudio2022:hover {
-  background: rgb(178, 93, 183, 0.5) !important;
+.mapped-skills > .visualstudio2022:hover,
+ul > .visualstudio2022:hover {
+  background: rgb(178, 93, 183, 0.5);
 }

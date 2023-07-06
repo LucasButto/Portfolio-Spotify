@@ -24,24 +24,24 @@ const TopContainer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <span>GITHUB</span>
               <GitHubIcon />
+              <span>GITHUB</span>
             </a>
             <a
               href="https://www.linkedin.com/in/lucas-butto-8a43a724b/"
               target="_blank"
               rel="noreferrer"
             >
-              <span>LINKEDIN</span>
               <LinkedInIcon />
+              <span>LINKEDIN</span>
             </a>
             <a
               href="mailto:lbutto40@gmail.com"
               target="_blank"
               rel="noreferrer"
             >
-              <span>EMAIL</span>
               <EmailIcon />
+              <span>EMAIL</span>
             </a>
           </div>
         </div>
