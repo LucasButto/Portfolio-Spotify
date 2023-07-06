@@ -1,19 +1,18 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-
+import { useViewTransitionNavigation } from "../Hooks/useViewTransitionNavigation";
 import "../Styles/ProjectItem.css";
 
 import PlayCircleFilledIcon from "@mui/icons-material/PlayCircleFilled";
 
 const ProjectItem = ({ image, name, id }) => {
-  const navigate = useNavigate();
+  const { viewNavigate } = useViewTransitionNavigation();
   const navigateToTop = () => {
     window.scrollTo({
-      top: 100,
-      left: 100,
+      top: 0,
+      left: 0,
       behavior: "smooth",
     });
-    navigate("/project/" + id);
+    viewNavigate("/project/" + id);
   };
   return (
     <div

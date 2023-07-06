@@ -1,29 +1,42 @@
 import React from "react";
-import { useContext } from "react";
-import { Link } from "react-router-dom";
-import PathContext from "../Contexts/PathContext";
-
+import { useViewTransitionNavigation } from "../Hooks/useViewTransitionNavigation";
 import "../Styles/NavHome.css";
 
 const NavHome = () => {
-  const { aboutClickHandler, skillsClickHandler, aboutStyles, skillsStyles } =
-    useContext(PathContext);
+  const currentPath = window.location.pathname;
+  const { viewNavigate } = useViewTransitionNavigation();
+
+  const checkPath = (path) => {
+    if (currentPath === "/home" && path === "/about") {
+      return "current link-home";
+    } else if (currentPath === path) {
+      return "current link-home";
+    } else {
+      return "link-home";
+    }
+  };
   return (
     <nav className="nav-home">
       <ul>
         <li>
-          <Link to="/about" className={aboutStyles} onClick={aboutClickHandler}>
+          <div
+            className={checkPath("/about")}
+            onClick={() => {
+              viewNavigate("/about");
+            }}
+          >
             ABOUT
-          </Link>
+          </div>
         </li>
         <li>
-          <Link
-            to="/skills"
-            className={skillsStyles}
-            onClick={skillsClickHandler}
+          <div
+            className={checkPath("/skills")}
+            onClick={() => {
+              viewNavigate("/skills");
+            }}
           >
             SKILLS
-          </Link>
+          </div>
         </li>
       </ul>
     </nav>

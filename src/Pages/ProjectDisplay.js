@@ -1,5 +1,6 @@
 import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { useViewTransitionNavigation } from "../Hooks/useViewTransitionNavigation";
 
 import { ProjectList } from "../Helpers/ProjectList";
 
@@ -14,11 +15,23 @@ import "../Styles/LogosHover.css";
 const ProjectDisplay = () => {
   const { id } = useParams();
   const project = ProjectList[id];
-  const navigate = useNavigate();
+  const { viewNavigate } = useViewTransitionNavigation();
 
   const goBack = () => {
-    navigate("/projects");
-    window.scrollTo(0, 0);
+    viewNavigate(-1);
+  };
+
+  const nextProject = () => {
+    viewNavigate("/project/" + (Number(id) + 1));
+  };
+
+  const checkButton = () => {
+    const lastId = ProjectList.length - 1;
+    if (id === lastId.toString()) {
+      return "goBack-button disabled-button ";
+    } else {
+      return "goBack-button";
+    }
   };
 
   return (
@@ -27,7 +40,7 @@ const ProjectDisplay = () => {
         <button className="goBack-button" onClick={goBack}>
           <ChevronLeftRoundedIcon />
         </button>
-        <button className="goBack-button disabled-button">
+        <button className={checkButton()} onClick={nextProject}>
           <ChevronRightRoundedIcon />
         </button>
       </div>

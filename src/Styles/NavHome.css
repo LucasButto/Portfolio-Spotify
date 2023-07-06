@@ -12,17 +12,22 @@
   list-style: none;
 }
 
-.nav-home > ul > li > a {
+.nav-home > ul > li > div {
   text-decoration: none;
   color: #c3c3c3;
   font-size: 1.3rem;
   font-weight: 600;
   transition: all 0.3s ease;
 }
-.current {
-  color: #ffffff !important;
+
+.nav-home > ul > li > div:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.nav-home > ul > li > .current {
+  color: #ffffff;
   border-bottom: 1px solid #1db954;
-  font-size: 1.5rem !important;
 }
 
 .nav-home > ul > li > a:hover {
