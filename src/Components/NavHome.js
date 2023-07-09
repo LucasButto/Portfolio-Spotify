@@ -7,7 +7,10 @@ const NavHome = () => {
   const { viewNavigate } = useViewTransitionNavigation();
 
   const checkPath = (path) => {
-    if (currentPath === "/home" && path === "/about") {
+    if (
+      (currentPath === "/home" && path === "/about") ||
+      (currentPath === "/" && path === "/about")
+    ) {
       return "current link-home";
     } else if (currentPath === path) {
       return "current link-home";
