@@ -16,6 +16,35 @@ import visualstudio2022 from "./Logos/visualstudio2022.png";
 
 export const SkillsList = [
   {
+    title: "Languages",
+    items: [
+      {
+        title: "JavaScript",
+        image: javascript,
+        styles: "skillItem javascript",
+        link: "https://www.aprendejavascript.dev/",
+      },
+      {
+        title: "Python",
+        image: python,
+        styles: "skillItem python",
+        link: "https://www.w3schools.com/python/",
+      },
+      {
+        title: "C#",
+        image: csharp,
+        styles: "skillItem csharp",
+        link: "https://www.tutorialesprogramacionya.com/csharpya/",
+      },
+      {
+        title: "C",
+        image: c,
+        styles: "skillItem c",
+        link: "https://www.w3schools.com/c/",
+      },
+    ],
+  },
+  {
     title: "Frontend",
     items: [
       {
@@ -58,35 +87,6 @@ export const SkillsList = [
         image: mysql,
         styles: "skillItem mysql",
         link: "https://www.youtube.com/playlist?list=PLKZTJP_-zNEJfUwtbg2h4ewgaNK5dnzSp",
-      },
-    ],
-  },
-  {
-    title: "Languages",
-    items: [
-      {
-        title: "JavaScript",
-        image: javascript,
-        styles: "skillItem javascript",
-        link: "https://www.aprendejavascript.dev/",
-      },
-      {
-        title: "Python",
-        image: python,
-        styles: "skillItem python",
-        link: "https://www.w3schools.com/python/",
-      },
-      {
-        title: "C",
-        image: c,
-        styles: "skillItem c",
-        link: "https://www.w3schools.com/c/",
-      },
-      {
-        title: "C#",
-        image: csharp,
-        styles: "skillItem csharp",
-        link: "https://www.tutorialesprogramacionya.com/csharpya/",
       },
     ],
   },
