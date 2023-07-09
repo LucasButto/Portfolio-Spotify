@@ -31,8 +31,6 @@ const Experience = () => {
                   title={item.title}
                   description={item.description}
                   date={item.date}
-                  image={item.image}
-                  styles={item.styles}
                 />
               </>
             );

@@ -10,19 +10,18 @@ const ExperienceItem = ({
   title,
   description,
   date,
-  image,
-  styles,
 }) => {
   return (
     <>
-      <li className={shownItem[id] ? "item itemShow" : "item"}>
+      <li
+        className={shownItem[id] ? "item itemShow" : "item"}
+        onClick={() => {
+          changeViewHandler(id);
+        }}
+      >
         <div className="data">
           <div className="button-title">
-            <button
-              onClick={() => {
-                changeViewHandler(id);
-              }}
-            >
+            <button>
               {shownItem[id] ? (
                 <PauseCircleFilledIcon />
               ) : (
