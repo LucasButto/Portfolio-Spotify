@@ -10,6 +10,7 @@
   border-radius: 10px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   padding: 20px;
+  text-decoration: none;
 }
 
 .skillItem:hover {
@@ -19,6 +20,8 @@
     rgba(32, 32, 32, 1) 0%,
     rgba(40, 40, 40, 1) 100%
   );
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .skillImg-container {

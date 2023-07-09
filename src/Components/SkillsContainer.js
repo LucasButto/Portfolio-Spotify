@@ -15,6 +15,7 @@ const SkillsContainer = ({ title, skills }) => {
               title={item.title}
               image={item.image}
               styles={item.styles}
+              link={item.link}
             />
           );
         })}
