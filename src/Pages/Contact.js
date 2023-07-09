@@ -43,13 +43,11 @@ const Contact = () => {
           "_dTu7J3vq-AlfVvXa"
         )
         .then((response) => {
-          console.log(response);
           setMessage("Email sent successfully!");
           setLoading(false);
           cleanInputs();
         })
         .catch((error) => {
-          console.log(error);
           setMessage("An error occurred, try again later.");
           setLoading(false);
           cleanInputs();

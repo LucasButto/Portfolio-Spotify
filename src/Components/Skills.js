@@ -9,8 +9,14 @@ const Skills = () => {
     <>
       <div className="skills">
         <div className="skillsList">
-          {SkillsList.map((item) => {
-            return <SkillsContainer title={item.title} skills={item.items} />;
+          {SkillsList.map((item, index) => {
+            return (
+              <SkillsContainer
+                title={item.title}
+                skills={item.items}
+                key={index}
+              />
+            );
           })}
         </div>
       </div>

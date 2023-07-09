@@ -24,6 +24,7 @@ const Experience = () => {
             return (
               <>
                 <ExperienceItem
+                  key={index}
                   id={index}
                   shownItem={shownItem}
                   changeViewHandler={changeViewHandler}

@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import React, { useEffect, useRef } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import TopContainer from "./TopContainer";
 import ProjectDisplay from "../Pages/ProjectDisplay";
@@ -12,16 +12,16 @@ import Contact from "../Pages/Contact";
 import "../Styles/Main.css";
 
 const Main = () => {
-  const currentPath = window.location.pathname;
+  const scrollContainerRef = useRef(null);
+  const location = useLocation();
 
   useEffect(() => {
-    console.log("funciona");
-    console.log(currentPath);
-    document.body.scrollTop = 0;
-  }, [currentPath]);
+    scrollContainerRef.current.scrollTop = 0;
+  }, [location]);
+
   return (
     <>
-      <main>
+      <main ref={scrollContainerRef}>
         <TopContainer />
         <Routes>
           <Route path="*" element={<Home />} />

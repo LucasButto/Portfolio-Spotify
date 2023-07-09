@@ -7,7 +7,7 @@ export const ExperienceList = [
     title: "University Degree in Programming",
     description:
       "University degree in programming that gave me skills in software and application development, programming languages, databases and technology project management, allowing me to create innovative solutions for different technological needs.",
-    date: "2021 - current",
+    date: "2021 - 2023",
     image: <SchoolIcon />,
     styles: "study",
   },

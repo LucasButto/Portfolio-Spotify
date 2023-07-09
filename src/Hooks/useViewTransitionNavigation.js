@@ -6,12 +6,10 @@ export const useViewTransitionNavigation = () => {
   const viewNavigate = (newRoute) => {
     if (!document.startViewTransition) {
       return () => {
-        document.documentElement.scrollTop = 0;
         navigate(newRoute);
       };
     } else {
       return document.startViewTransition(() => {
-        document.documentElement.scrollTop = 0;
         navigate(newRoute);
       });
     }
