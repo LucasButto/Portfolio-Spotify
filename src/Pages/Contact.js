@@ -14,7 +14,7 @@ const Contact = () => {
   const [inputMessage, setInputMessage] = useState("");
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState("Send the email");
+  const [message, setMessage] = useState("Send an email");
 
   const cleanInputs = () => {
     setInputName("");

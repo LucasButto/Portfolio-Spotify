@@ -6,6 +6,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import VerifiedIcon from "@mui/icons-material/Verified";
+import SocialMediaButton from "./SocialMediaButton";
 
 const TopContainer = () => {
   return (
@@ -18,31 +19,24 @@ const TopContainer = () => {
           </div>
           <h1>Lucas Butto</h1>
           <div className="links">
-            <a
-              className="link"
-              href="https://github.com/LucasButto"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <GitHubIcon />
-              <span>GITHUB</span>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/lucas-butto-8a43a724b/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <LinkedInIcon />
-              <span>LINKEDIN</span>
-            </a>
-            <a
-              href="mailto:lbutto40@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <EmailIcon />
-              <span>EMAIL</span>
-            </a>
+            <SocialMediaButton
+              link="https://github.com/LucasButto"
+              title="Visit my GitHub"
+              icon={<GitHubIcon />}
+              name="GITHUB"
+            />
+            <SocialMediaButton
+              link={"https://www.linkedin.com/in/lucas-butto-8a43a724b/"}
+              title="Check my Linkedin"
+              icon={<LinkedInIcon />}
+              name="LINKEDIN"
+            />
+            <SocialMediaButton
+              link={"mailto:lbutto40@gmail.com"}
+              title="Send me an email"
+              icon={<EmailIcon />}
+              name="EMAIL"
+            />
           </div>
         </div>
       </div>

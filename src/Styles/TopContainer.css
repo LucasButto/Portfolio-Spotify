@@ -53,27 +53,6 @@
   gap: 30px;
 }
 
-.links > a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 5px;
-  color: #e8e8e8;
-  font-size: 0.9rem;
-  font-weight: 400;
-  text-decoration: none;
-  padding: 5px 10px;
-  border: 1px solid #1db954;
-  border-radius: 20px;
-  transition: all 0.3s ease-in-out;
-}
-
-.links > a:hover {
-  background-color: #1db954;
-  color: #ffffff;
-  cursor: pointer;
-}
-
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
   .info > h1 {
     font-size: 4rem;

@@ -1,5 +1,8 @@
-import React from "react";
+import { useState } from "react";
 import { ProjectList } from "../Helpers/ProjectList";
+
+import Modal from "./Modal";
+import SocialMediaButton from "./SocialMediaButton";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
@@ -7,7 +10,9 @@ import LaunchIcon from "@mui/icons-material/Launch";
 import "../Styles/About.css";
 
 const About = () => {
-  const lastestProject = ProjectList[ProjectList.length - 2];
+  const lastestProject = ProjectList[0];
+
+  const [modal, setModal] = useState(false);
 
   return (
     <div className="articles-containers">
@@ -26,38 +31,41 @@ const About = () => {
         <h3>Lastest Project</h3>
         <div className="lastest-project-container">
           <div className="img-container">
-            <img src={lastestProject.image} alt="Project img" />
+            <img
+              src={lastestProject.image}
+              alt="Project img"
+              onClick={() => setModal(true)}
+            />
           </div>
           <div className="right-container">
             <p>{lastestProject.description}</p>
             <div className="links">
               {Boolean(lastestProject.github) && (
-                <a
-                  href={lastestProject.github}
-                  target="_blank"
-                  rel="noreferrer"
+                <SocialMediaButton
+                  link={lastestProject.github}
                   title="Visit the repository"
-                >
-                  <GitHubIcon />
-                  <span>GITHUB</span>
-                </a>
+                  icon={<GitHubIcon />}
+                  name="GITHUB"
+                />
               )}
 
               {Boolean(lastestProject.link) && (
-                <a
-                  href={lastestProject.link}
-                  target="_blank"
-                  rel="noreferrer"
+                <SocialMediaButton
+                  link={lastestProject.link}
                   title="Go to the site"
-                >
-                  <LaunchIcon />
-                  <span>SITE</span>
-                </a>
+                  icon={<LaunchIcon />}
+                  name="SITE"
+                />
               )}
             </div>
           </div>
         </div>
       </article>
+      {modal && (
+        <Modal setModal={setModal}>
+          <img src={lastestProject.image} alt="Project img" />
+        </Modal>
+      )}
     </div>
   );
 };

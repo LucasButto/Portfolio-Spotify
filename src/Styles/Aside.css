@@ -53,13 +53,13 @@
 
 .top-link:hover {
   background-color: #1db954;
-  color: #efefef;
+  color: #242424;
   cursor: pointer;
 }
 
 .current-nav {
   background-color: #1db954;
-  color: #efefef;
+  color: #242424;
 }
 
 .top-link > svg {

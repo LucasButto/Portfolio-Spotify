@@ -1,8 +1,10 @@
-import React from "react";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { useViewTransitionNavigation } from "../Hooks/useViewTransitionNavigation";
 
 import { ProjectList } from "../Helpers/ProjectList";
+
+import Modal from "../Components/Modal";
 
 import ChevronLeftRoundedIcon from "@mui/icons-material/ChevronLeftRounded";
 import ChevronRightRoundedIcon from "@mui/icons-material/ChevronRightRounded";
@@ -16,6 +18,8 @@ const ProjectDisplay = () => {
   const { id } = useParams();
   const project = ProjectList[id];
   const { viewNavigate } = useViewTransitionNavigation();
+
+  const [modal, setModal] = useState(false);
 
   const goBack = () => {
     viewNavigate(-1);
@@ -45,7 +49,11 @@ const ProjectDisplay = () => {
         </button>
       </div>
       <div className="img-title-container">
-        <img src={project.image} alt="Project img" />
+        <img
+          src={project.image}
+          alt="Project img"
+          onClick={() => setModal(true)}
+        />
         <div className="title-links">
           <h3> {project.name}</h3>
           <div className="links-containers">
@@ -89,6 +97,11 @@ const ProjectDisplay = () => {
             ))}
           </div>
         </div>
+      )}
+      {modal && (
+        <Modal setModal={setModal}>
+          <img src={project.image} alt="Project img" />
+        </Modal>
       )}
     </div>
   );

@@ -8,8 +8,47 @@ import Proj6 from "./Assets/proj6.jpg";
 import Proj7 from "./Assets/proj7.jpg";
 import Proj8 from "./Assets/proj8.jpg";
 import Proj9 from "./Assets/proj9.jpg";
+import Proj10 from "./Assets/proj10.jpg";
 
 export const ProjectList = [
+  {
+    name: "Bienenstock Corp. ERP System",
+    image: Proj10,
+    skills: [
+      "React.js",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "C#",
+      ".Net Core",
+      "SQL Server",
+    ],
+    styles: [
+      "react",
+      "html",
+      "css",
+      "javascript",
+      "bootstrap",
+      "csharp",
+      "netcore",
+      "mysql",
+    ],
+    github: "https://github.com/MaxiPepa/bienenstock-corp-web",
+    link: "https://bienenstock-corp-web.vercel.app/login",
+    description:
+      "This system is designed to efficiently manage the business operations of the company, providing comprehensive tools for purchasing, sales, inventory management, analysis, and more. The system uses modern technologies such as React for the frontend, C# and .NET for the backend, and SQL Server as the database.",
+  },
+  {
+    name: "PokeQuiz",
+    image: Proj9,
+    skills: ["React.js", "HTML", "CSS", "JavaScript"],
+    styles: ["react", "html", "css", "javascript"],
+    github: "https://github.com/LucasButto/PokeQuiz",
+    link: "https://lucasbutto.github.io/PokeQuiz/",
+    description:
+      "This is a React-based game project where you have to guess the name of a Pokémon from its silhouette. The project comes with custom settings where you can choose the regions you want to play with and it saves your best score in localstorage.",
+  },
   {
     name: "Store-Management",
     image: Proj1,
@@ -19,6 +58,16 @@ export const ProjectList = [
     link: "https://store-management-ar.netlify.app/",
     description:
       "This project is a stock control system that uses React for the frontend and Firebase for the backend. With it, you can keep a record of your products and their available quantities easily and quickly.",
+  },
+  {
+    name: "Pomodoro Timer",
+    image: Proj8,
+    skills: ["React.js", "HTML", "CSS", "JavaScript"],
+    styles: ["react", "html", "css", "javascript"],
+    github: "https://github.com/LucasButto/Pomodoro",
+    link: "https://lucasbutto.github.io/Pomodoro/",
+    description:
+      "This project is a Pomodoro clock application written in React. Pomodoro is a productivity method that involves working in short time blocks followed by short breaks. This clock will help you stay focused and improve your productivity.",
   },
   {
     name: "Weather App",
@@ -74,26 +123,6 @@ export const ProjectList = [
     link: "https://lucasbutto.github.io/tic-tac-toe/",
     description:
       "This is a simple calculator application developed in React. With this application, users can perform basic mathematical operations such as addition, subtraction, multiplication, and division.",
-  },
-  {
-    name: "Pomodoro Timer",
-    image: Proj8,
-    skills: ["React.js", "HTML", "CSS", "JavaScript"],
-    styles: ["react", "html", "css", "javascript"],
-    github: "https://github.com/LucasButto/Pomodoro",
-    link: "https://lucasbutto.github.io/Pomodoro/",
-    description:
-      "This project is a Pomodoro clock application written in React. Pomodoro is a productivity method that involves working in short time blocks followed by short breaks. This clock will help you stay focused and improve your productivity.",
-  },
-  {
-    name: "PokeQuiz",
-    image: Proj9,
-    skills: ["React.js", "HTML", "CSS", "JavaScript"],
-    styles: ["react", "html", "css", "javascript"],
-    github: "https://github.com/LucasButto/PokeQuiz",
-    link: "https://lucasbutto.github.io/PokeQuiz/",
-    description:
-      "This is a React-based game project where you have to guess the name of a Pokémon from its silhouette. The project comes with custom settings where you can choose the regions you want to play with and it saves your best score in localstorage.",
   },
   {
     name: "More In Progress",
