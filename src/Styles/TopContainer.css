@@ -26,6 +26,8 @@
 }
 
 .verified-p-container {
+  position: relative;
+  top: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -44,22 +46,37 @@
 .info > h1 {
   font-size: 5.5rem;
   font-weight: 600;
+  margin: none;
 }
 
 .links {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 30px;
+  gap: 15px;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1200px) {
-  .info > h1 {
-    font-size: 4rem;
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .info {
+    gap: 10px;
   }
+  .info > h1 {
+    font-size: 4.5rem;
+  }
+  .verified-p-container {
+    font-size: 1rem;
+  }
+}
 
-  .links > a {
-    font-size: 0.8rem;
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .info {
+    gap: 10px;
+  }
+  .info > h1 {
+    font-size: 4.5rem;
+  }
+  .verified-p-container {
+    font-size: 1rem;
   }
 }
 
@@ -75,22 +92,5 @@
 
   .verified-p-container > p {
     font-size: 1.2rem;
-  }
-
-  .links > a {
-    border: none;
-  }
-
-  .links > a > svg {
-    font-size: 2.8rem;
-    color: #1db954;
-  }
-
-  .links > a:hover {
-    background-color: transparent;
-  }
-
-  .links > a > span {
-    display: none;
   }
 }

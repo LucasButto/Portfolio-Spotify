@@ -5,6 +5,7 @@ import { useViewTransitionNavigation } from "../Hooks/useViewTransitionNavigatio
 import { ProjectList } from "../Helpers/ProjectList";
 
 import Modal from "../Components/Modal";
+import SocialMediaButton from "../Components/SocialMediaButton";
 
 import ChevronLeftRoundedIcon from "@mui/icons-material/ChevronLeftRounded";
 import ChevronRightRoundedIcon from "@mui/icons-material/ChevronRightRounded";
@@ -58,25 +59,21 @@ const ProjectDisplay = () => {
           <h3> {project.name}</h3>
           <div className="links-containers">
             {Boolean(project.github) && (
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noreferrer"
+              <SocialMediaButton
+                link={project.github}
                 title="Visit the repository"
-              >
-                <GitHubIcon />
-              </a>
+                icon={<GitHubIcon />}
+                name="REPOSITORY"
+              />
             )}
 
             {Boolean(project.link) && (
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noreferrer"
+              <SocialMediaButton
+                link={project.link}
                 title="Go to the site"
-              >
-                <LaunchIcon />
-              </a>
+                icon={<LaunchIcon />}
+                name="SITE"
+              />
             )}
           </div>
         </div>
