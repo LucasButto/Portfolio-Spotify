@@ -1,4 +1,4 @@
-# Portafolio Spotify Based
+# Portfolio Spotify Based
 
 This project consists of a responsive portfolio built in React, which was inspired by the user interface and user experience of Spotify. The main objective of the project is to showcase my skills as a developer and allow visitors to explore my projects, experience, and get in touch with me.
 
