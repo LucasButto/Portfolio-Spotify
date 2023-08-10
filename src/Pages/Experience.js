@@ -22,17 +22,15 @@ const Experience = () => {
         <ul className="list">
           {ExperienceList.map((item, index) => {
             return (
-              <>
-                <ExperienceItem
-                  key={index}
-                  id={index}
-                  shownItem={shownItem}
-                  changeViewHandler={changeViewHandler}
-                  title={item.title}
-                  description={item.description}
-                  date={item.date}
-                />
-              </>
+              <ExperienceItem
+                key={index}
+                id={index}
+                shownItem={shownItem}
+                changeViewHandler={changeViewHandler}
+                title={item.title}
+                description={item.description}
+                date={item.date}
+              />
             );
           })}
         </ul>
