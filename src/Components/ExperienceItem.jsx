@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import PlayCircleFilledIcon from "@mui/icons-material/PlayCircleFilled";
-import PauseCircleFilledIcon from "@mui/icons-material/PauseCircleFilled";
+import PlayCircleRoundedIcon from "@mui/icons-material/PlayCircleRounded";
+import PauseCircleFilledRoundedIcon from "@mui/icons-material/PauseCircleFilledRounded";
 
 const ExperienceItem = ({
   shownItem,
@@ -22,9 +22,9 @@ const ExperienceItem = ({
           <div className="button-title">
             <button>
               {shownItem[id] ? (
-                <PauseCircleFilledIcon />
+                <PauseCircleFilledRoundedIcon />
               ) : (
-                <PlayCircleFilledIcon />
+                <PlayCircleRoundedIcon />
               )}
             </button>
             <h3>

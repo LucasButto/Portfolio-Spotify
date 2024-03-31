@@ -71,7 +71,15 @@
 
 @media screen and (min-width: 1367px) {
   .aside > h2 {
-    font-size: 4.5rem;
+    font-size: 4rem;
+  }
+
+  .top-link > span {
+    font-size: 1.5rem;
+  }
+
+  .top-link > svg {
+    font-size: 1.8rem;
   }
 }
 

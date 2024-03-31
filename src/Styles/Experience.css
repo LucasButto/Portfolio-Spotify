@@ -109,10 +109,35 @@
 
 @media screen and (min-width: 1440px) {
   .list {
-    width: 80%;
+    width: 90%;
   }
+
+  .button-title > h3 {
+    font-size: 2rem;
+  }
+
+  .experience-date {
+    font-size: 1.5rem;
+  }
+
+  .button-title > button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .button-title > button > svg {
+    font-size: 5rem;
+  }
+
+  .button-title > button > svg:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
   .item > span {
-    width: 70%;
+    width: 90%;
+    font-size: 1.1rem;
   }
 }
 
