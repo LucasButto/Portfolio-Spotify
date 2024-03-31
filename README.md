@@ -5,6 +5,7 @@ This project consists of a responsive portfolio built in React, which was inspir
 ## Pages
 
 The portfolio consists of four distinct pages:
+
 - <b>Home:</b> The main page where information about me, my skills, and experience can be found.
 - <b>Projects:</b> A page where all the projects I have worked on can be explored. Details such as the technology used and the results obtained are displayed.
 - <b>Experience:</b> A page where information about my education, previous work experience, and professional career as a developer can be found.
@@ -17,10 +18,10 @@ The portfolio was built using React DOM, which makes it highly interactive and r
 ## How to Use the Project
 
 1. Clone the repository
-2. Install the project dependencies using the command 
-    > npm install
-3. Run the project using the command 
-    > npm start
+2. Install the project dependencies using the command
+   > npm install
+3. Run the project using the command
+   > npm run dev
 4. Navigate through the portfolio and explore the different pages.
 
 ## Contribution

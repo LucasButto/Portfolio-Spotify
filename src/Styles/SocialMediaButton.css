@@ -1,0 +1,51 @@
+.social-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  color: #e8e8e8;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #1db954;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-link:hover {
+  background-color: #1db954;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .social-link {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .social-link {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .social-link {
+    border: none;
+  }
+
+  .social-link > svg {
+    font-size: 2.8rem;
+    color: #1db954;
+  }
+
+  .social-link:hover {
+    background-color: transparent;
+  }
+
+  .social-link > span {
+    display: none;
+  }
+}

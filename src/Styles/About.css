@@ -1,0 +1,287 @@
+.articles-containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 30px 0;
+  gap: 20px;
+  padding: 0 30px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 30px;
+  background-color: #161616;
+  border-radius: 10px;
+}
+
+article:hover {
+  background-color: #191919;
+  transition: 0.2s;
+}
+
+article > h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1ed760;
+}
+
+article > p {
+  max-width: 75ch;
+  text-wrap: balance;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+article > p > span {
+  color: #1db954;
+}
+
+.lastest-project-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.img-container {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.img-container > img {
+  width: 90%;
+  height: 90%;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.img-container > img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+  padding: 2%;
+  gap: 20px;
+}
+
+.right-container > p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+@media (1920px <= width) {
+  .articles-containers {
+    width: 80%;
+  }
+}
+
+@media (1280px <= width < 1920px) {
+  article > h3 {
+    font-size: 1.5rem;
+  }
+  article > p {
+    font-size: 1rem;
+  }
+  .right-container > p {
+    font-size: 1rem;
+  }
+}
+
+@media (1024px <= width < 1280px) {
+  article > h3 {
+    font-size: 1.5rem;
+  }
+  article > p {
+    font-size: 1rem;
+  }
+  .right-container > p {
+    font-size: 1rem;
+  }
+}
+
+@media (768px <= width < 1024px) {
+  article > h3 {
+    font-size: 1.5rem;
+  }
+  article > p {
+    font-size: 1rem;
+  }
+  .right-container > p {
+    font-size: 1rem;
+  }
+}
+
+@media (width < 768px) {
+  article > h3 {
+    font-size: 1.5rem;
+    margin: auto;
+  }
+  article > p {
+    font-size: 1rem;
+  }
+  .lastest-project-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .right-container {
+    width: 100%;
+  }
+
+  .img-container {
+    width: 100%;
+  }
+
+  .right-container > p {
+    font-size: 1rem;
+  }
+  .right-container > .links {
+    margin: auto;
+  }
+}
+
+/* @media screen and (min-width: 1201px) and (min-width: 1920px) {
+  .articles-containers {
+    width: 80%;
+  }
+
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1439px) {
+  article > h3 {
+    font-size: 1.5rem;
+  }
+
+  article > p {
+    font-size: 1rem;
+  }
+
+  .lastest-project-container > img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .right-container > p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  article > h3 {
+    font-size: 1.7rem;
+  }
+
+  article > p {
+    font-size: 1.1rem;
+  }
+
+  .lastest-project-container > img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .right-container > p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  article > h3 {
+    font-size: 1.7rem;
+  }
+
+  article > p {
+    font-size: 1.1rem;
+  }
+
+  .lastest-project-container > img {
+    width: 250px;
+    height: 150px;
+  }
+
+  .right-container > p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  article > h3 {
+    font-size: 1.7rem;
+    margin: auto;
+  }
+
+  article > p {
+    font-size: 1.1rem;
+  }
+
+  .lastest-project-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .right-container {
+    width: 100%;
+  }
+
+  .lastest-project-container > img {
+    margin: auto;
+    width: 350px;
+    height: 250px;
+  }
+
+  .right-container > p {
+    font-size: 1.1rem;
+  }
+
+  .right-container > .links {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  article > h3 {
+    font-size: 1.5rem;
+    margin: auto;
+  }
+
+  article > p {
+    font-size: 1rem;
+  }
+
+  .lastest-project-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .lastest-project-container > img {
+    margin: auto;
+    width: 250px;
+    height: 190px;
+  }
+
+  .right-container {
+    width: 100%;
+  }
+
+  .right-container > p {
+    font-size: 1.1rem;
+  }
+
+  .right-container > .links {
+    margin: auto;
+  }
+} */
