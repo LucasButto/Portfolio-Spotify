@@ -1,0 +1,94 @@
+.mapped-skills > .html:hover,
+ul > .html:hover {
+  background: rgba(227, 76, 38, 0.5);
+}
+
+.mapped-skills > .css:hover,
+ul > .css:hover {
+  background: rgba(38, 77, 228, 0.5);
+}
+
+.mapped-skills > .javascript:hover,
+ul > .javascript:hover {
+  background: rgba(247, 223, 30, 0.5);
+}
+
+.mapped-skills > .react:hover,
+ul > .react:hover {
+  background: rgba(97, 218, 251, 0.5);
+}
+
+.mapped-skills > .bootstrap:hover,
+ul > .bootstrap:hover {
+  background: rgba(86, 61, 124, 0.5);
+}
+
+.mapped-skills > .netcore:hover,
+ul > .netcore:hover {
+  background: rgb(92, 41, 146, 0.5);
+}
+
+.mapped-skills > .mysql:hover,
+ul > .mysql:hover {
+  background: rgb(0, 95, 139, 0.5);
+}
+
+.mapped-skills > .python:hover,
+ul > .python:hover {
+  background: rgb(0, 95, 139, 0.5);
+}
+
+.mapped-skills > .c:hover,
+ul > .c:hover {
+  background: rgb(57, 73, 171, 0.5);
+}
+
+.mapped-skills > .csharp:hover,
+ul > .csharp:hover {
+  background: rgb(39, 0, 98, 0.5);
+}
+
+.mapped-skills > .firebase:hover,
+ul > .firebase:hover {
+  background: rgb(255, 202, 40, 0.5);
+}
+
+.mapped-skills > .git:hover,
+ul > .git:hover {
+  background: rgb(240, 81, 51, 0.5);
+}
+
+.mapped-skills > .github:hover,
+ul > .github:hover {
+  background: rgb(13, 38, 54, 0.5);
+}
+
+.mapped-skills > .visualstudiocode:hover,
+ul > .visualstudiocode:hover {
+  background: rgb(0, 95, 139, 0.5);
+}
+
+.mapped-skills > .visualstudio2022:hover,
+ul > .visualstudio2022:hover {
+  background: rgb(178, 93, 183, 0.5);
+}
+
+.mapped-skills > .nextjs:hover,
+ul > .nextjs:hover {
+  background: #ffffff80;
+}
+
+.mapped-skills > .typescript:hover,
+ul > .typescript:hover {
+  background: #007acc80;
+}
+
+.mapped-skills > .sass:hover,
+ul > .sass:hover {
+  background: #cc669980;
+}
+
+.mapped-skills > .postman:hover,
+ul > .postman:hover {
+  background: #ff6c3780;
+}
