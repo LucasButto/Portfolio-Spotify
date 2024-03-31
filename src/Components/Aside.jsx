@@ -4,7 +4,7 @@ import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import CodeRoundedIcon from "@mui/icons-material/CodeRounded";
 import WorkRoundedIcon from "@mui/icons-material/WorkRounded";
 import AlternateEmailRoundedIcon from "@mui/icons-material/AlternateEmailRounded";
-import SchoolRoundedIcon from "@mui/icons-material/SchoolRounded";
+//import SchoolRoundedIcon from "@mui/icons-material/SchoolRounded";
 
 import "../Styles/Aside.css";
 
@@ -69,7 +69,7 @@ const Aside = () => {
                 </div>
               </div>
             </li>
-            <li>
+            {/*<li>
               <div
                 onClick={() => {
                   viewNavigate("/education");
@@ -80,7 +80,7 @@ const Aside = () => {
                   <span>Education</span>
                 </div>
               </div>
-            </li>
+              </li>*/}
             <li>
               <div
                 onClick={() => {
