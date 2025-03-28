@@ -9,8 +9,19 @@ import Proj7 from "./Assets/proj7.jpg";
 import Proj8 from "./Assets/proj8.jpg";
 import Proj9 from "./Assets/proj9.jpg";
 import Proj10 from "./Assets/proj10.jpg";
+import Proj11 from "./Assets/proj11.jpg";
 
 export const ProjectList = [
+  {
+    name: "Architect Julian Peisino Portfolio",
+    gradient: "#7FD5FD",
+    image: Proj11,
+    skills: ["Next.js", "React.js", "HTML", "CSS", "JavaScript", "Firebase"],
+    styles: ["nextjs", "react", "html", "css", "javascript", "firebase"],
+    link: "https://Peisino.com.ar/",
+    description:
+      "Development of a website for architect Julián Peisino using Next.js for the frontend and Firebase for backend data management. The platform showcases architectural projects dynamically and optimally, ensuring smooth navigation and an intuitive user experience.",
+  },
   {
     name: "Bienenstock Corp. ERP System",
     gradient: "#c1c1c1",

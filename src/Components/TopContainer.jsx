@@ -1,3 +1,4 @@
+import { useLocation } from "react-router-dom";
 import "../Styles/TopContainer.css";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -8,13 +9,18 @@ import SocialMediaButton from "./SocialMediaButton";
 import DescriptionRoundedIcon from "@mui/icons-material/DescriptionRounded";
 
 const TopContainer = () => {
+  const pathname = useLocation().pathname;
+
+  if (/^\/project\/\d+$/.test(pathname)) {
+    return null;
+  }
   return (
     <>
       <div className="top-container">
         <div className="info">
           <div className="verified-p-container">
             <VerifiedIcon />
-            <p>Front-End developer</p>
+            <p>FullStack developer</p>
           </div>
           <h1>Lucas Butto</h1>
           <div className="links">
