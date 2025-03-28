@@ -40,7 +40,12 @@ const ProjectDisplay = () => {
   };
 
   return (
-    <div className="project">
+    <div
+      className="project"
+      style={{
+        background: `linear-gradient(180deg, ${project.gradient} 0%, #121212 60%)`,
+      }}
+    >
       <div className="goButtons-container">
         <button className="goBack-button" onClick={goBack}>
           <ChevronLeftRoundedIcon />

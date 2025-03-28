@@ -9,10 +9,22 @@ import Proj7 from "./Assets/proj7.jpg";
 import Proj8 from "./Assets/proj8.jpg";
 import Proj9 from "./Assets/proj9.jpg";
 import Proj10 from "./Assets/proj10.jpg";
+import Proj11 from "./Assets/proj11.jpg";
 
 export const ProjectList = [
   {
+    name: "Architect Julian Peisino Portfolio",
+    gradient: "#7FD5FD",
+    image: Proj11,
+    skills: ["Next.js", "React.js", "HTML", "CSS", "JavaScript", "Firebase"],
+    styles: ["nextjs", "react", "html", "css", "javascript", "firebase"],
+    link: "https://Peisino.com.ar/",
+    description:
+      "Development of a website for architect Julián Peisino using Next.js for the frontend and Firebase for backend data management. The platform showcases architectural projects dynamically and optimally, ensuring smooth navigation and an intuitive user experience.",
+  },
+  {
     name: "Bienenstock Corp. ERP System",
+    gradient: "#c1c1c1",
     image: Proj10,
     skills: [
       "React.js",
@@ -41,6 +53,7 @@ export const ProjectList = [
   },
   {
     name: "PokeQuiz",
+    gradient: "#e6a82c",
     image: Proj9,
     skills: ["React.js", "HTML", "CSS", "JavaScript"],
     styles: ["react", "html", "css", "javascript"],
@@ -51,6 +64,7 @@ export const ProjectList = [
   },
   {
     name: "Store-Management",
+    gradient: "#0c98c7",
     image: Proj1,
     skills: ["React.js", "HTML", "CSS", "JavaScript", "Bootstrap", "Firebase"],
     styles: ["react", "html", "css", "javascript", "bootstrap", "firebase"],
@@ -61,6 +75,7 @@ export const ProjectList = [
   },
   {
     name: "Pomodoro Timer",
+    gradient: "#f65a32",
     image: Proj8,
     skills: ["React.js", "HTML", "CSS", "JavaScript"],
     styles: ["react", "html", "css", "javascript"],
@@ -71,6 +86,7 @@ export const ProjectList = [
   },
   {
     name: "Weather App",
+    gradient: "#039189",
     image: Proj2,
     skills: ["HTML", "CSS", "JavaScript"],
     styles: ["html", "css", "javascript"],
@@ -81,6 +97,7 @@ export const ProjectList = [
   },
   {
     name: "CRUD API",
+    gradient: "#c6c6c6",
     image: Proj3,
     skills: [".NET Core", "MySQL"],
     styles: ["netcore", "mysql"],
@@ -88,6 +105,7 @@ export const ProjectList = [
   },
   {
     name: "Pointer Game",
+    gradient: "#277370",
     image: Proj4,
     skills: ["HTML", "CSS", "JavaScript"],
     styles: ["html", "css", "javascript"],
@@ -98,6 +116,7 @@ export const ProjectList = [
   },
   {
     name: "ToDo-List",
+    gradient: "#d7d7d7",
     image: Proj5,
     skills: ["React.js", "HTML", "CSS", "JavaScript"],
     styles: ["react", "html", "css", "javascript"],
@@ -108,6 +127,7 @@ export const ProjectList = [
   },
   {
     name: "Calculator",
+    gradient: "#a6191b",
     image: Proj6,
     skills: ["React.js", "HTML", "CSS", "JavaScript"],
     styles: ["react", "html", "css", "javascript"],
@@ -116,6 +136,7 @@ export const ProjectList = [
   },
   {
     name: "Tic Tac Toe",
+    gradient: "#d7d7d7",
     image: Proj7,
     skills: ["React.js", "HTML", "CSS", "JavaScript"],
     styles: ["react", "html", "css", "javascript"],
@@ -126,6 +147,7 @@ export const ProjectList = [
   },
   {
     name: "More In Progress",
+    gradient: "#c49c3d",
     image: ProjX,
   },
 ];

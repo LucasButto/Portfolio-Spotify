@@ -28,9 +28,8 @@ const ExperienceItem = ({
               )}
             </button>
             <h3>
-              {" "}
-              <span className="experience-title">{title}</span> |{" "}
-              <span className="experience-date">{date}</span>{" "}
+              <span className="experience-title">{title}</span>
+              <span className="experience-date">{date}</span>
             </h3>
           </div>
         </div>

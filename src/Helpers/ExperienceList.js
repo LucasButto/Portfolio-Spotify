@@ -1,44 +1,26 @@
 export const ExperienceList = [
   {
-    title: "University Degree in Programming",
+    title: "FullStack Developer - La Mutual de AMR",
     description:
-      "University degree in programming that gave me skills in software and application development, programming languages, databases and technology project management, allowing me to create innovative solutions for different technological needs.",
-    date: "2021 - 2023",
+      "Development and maintenance of fullstack functionalities using Next.js for the frontend and .NET for the backend to enhance user experience and system efficiency. Migration and optimization of databases, transferring structures and data from Adabas to SQL Server while ensuring integrity and performance. Creation and adaptation of new classes and views to integrate the migrated information into the system.",
+    date: "Nov 2024 - Current",
   },
   {
-    title: "Introduction to Databases & SQL",
+    title: "Frontend Developer - La Mutual de AMR",
     description:
-      "Introduction to Databases and SQL course, where I learned the basics of relational database management, how to design and structure databases, and how to write SQL queries to retrieve and manipulate data.",
-    date: "2022",
+      "Development and maintenance of frontend components and pages using Next.js to enhance user experience and improve the efficiency of the Mutual's website. Close collaboration with the design team and other developers to implement responsive and functional designs that meet quality and usability standards. Progressive migration of existing functionalities and pages to Next.js architecture, optimizing performance and scalability.",
+    date: "Nov 2023 - Nov 2024",
   },
   {
-    title: "PC Assembly and Maintenance",
+    title: "Software Developer - Neoris",
     description:
-      "PC repair and maintenance course, where I learned to troubleshoot hardware and software problems, optimize operating system performance, upgrade and replace components, and perform diagnostics and preventive maintenance.",
-    date: "2021",
-  },
-  {
-    title: "Excel programming with VBA",
-    description:
-      "Excel programming course with VBA, where I learned how to automate complex tasks and save time through the use of macros and programming in Visual Basic.",
-    date: "2020",
-  },
-  {
-    title: "Data analysis using Microsoft Excel.",
-    description:
-      "Data management course in Excel, where I learned how to organize and manipulate large data sets, clean and debug information, and use analysis and visualization tools to obtain useful information.",
-    date: "2020",
+      "Development and maintenance of enterprise applications using .NET Framework and .NET Core technologies, with a primary focus on frontend development using Angular for the Dreyfus platform. Close collaboration with business analysts and end-users to understand requirements and design technical solutions that meet the needs of the Dreyfus system. Design and development of interactive and responsive user interfaces that enhance usability and improve the user experience within the Dreyfus system.",
+    date: "Oct 2023",
   },
   {
     title: "Internships at Arrow Computacion",
     description:
-      "Realicé una pasantía en Arrow Computación, donde tuve la responsabilidad de realizar tareas de ensamblaje y mantenimiento de equipos informáticos. Durante mi tiempo allí, mejoré mis habilidades técnicas y desarrollé una comprensión más profunda de los componentes de la computadora y su funcionalidad.",
-    date: "2017",
-  },
-  {
-    title: "Bachelor in economics and administration",
-    description:
-      "I obtained a Bachelor's degree in Economics and Administration during my high school studies, acquiring knowledge in areas such as finance, accounting, marketing and human resources. This education provided me with fundamental skills in the understanding of the business world. (Eesopi N3081 Dante Alighieri).",
-    date: "2013 - 2017",
+      "I completed an internship at Arrow Computación, where I was responsible for assembling and maintaining computer equipment. During my time there, I enhanced my technical skills and developed a deeper understanding of computer components and their functionality.",
+    date: "Sep 2017",
   },
 ];

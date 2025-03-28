@@ -7,6 +7,7 @@ import ProjectDisplay from "../Pages/ProjectDisplay";
 import Home from "../Pages/Home";
 import Projects from "../Pages/Projects";
 import Experience from "../Pages/Experience";
+import Education from "../Pages/Education";
 import Contact from "../Pages/Contact";
 
 import "../Styles/Main.css";
@@ -22,14 +23,17 @@ const Main = () => {
   return (
     <>
       <main ref={scrollContainerRef}>
-        <TopContainer />
-        <Routes>
-          <Route path="*" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/project/:id" element={<ProjectDisplay />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <div className="main-container">
+          <TopContainer />
+          <Routes>
+            <Route path="*" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/project/:id" element={<ProjectDisplay />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/education" element={<Education />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
       </main>
     </>
   );
