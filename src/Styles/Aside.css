@@ -143,7 +143,7 @@
     height: 75px;
     justify-content: center;
     padding: 0;
-    padding-top: 15px;
+    padding-top: 5px;
   }
 
   .aside-content > h2 {
@@ -173,9 +173,10 @@
 
   div > .top-link {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 5px;
   }
 
   div > .top-link > svg {
@@ -183,12 +184,13 @@
   }
 
   div > .top-link > span {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
+    font-weight: 400;
   }
 }
 
 @media screen and (max-width: 480px) {
   div > .top-link > span {
-    display: none;
+    font-size: 0.7rem;
   }
 }

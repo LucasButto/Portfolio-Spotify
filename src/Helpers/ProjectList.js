@@ -53,7 +53,7 @@ export const ProjectList = [
   },
   {
     name: "PokeQuiz",
-    gradient: "#e6a82c",
+    gradient: "#f2c004",
     image: Proj9,
     skills: ["React.js", "HTML", "CSS", "JavaScript"],
     styles: ["react", "html", "css", "javascript"],
@@ -75,7 +75,7 @@ export const ProjectList = [
   },
   {
     name: "Pomodoro Timer",
-    gradient: "#f65a32",
+    gradient: "#ffb870",
     image: Proj8,
     skills: ["React.js", "HTML", "CSS", "JavaScript"],
     styles: ["react", "html", "css", "javascript"],
@@ -97,7 +97,7 @@ export const ProjectList = [
   },
   {
     name: "CRUD API",
-    gradient: "#c6c6c6",
+    gradient: "#7dd438",
     image: Proj3,
     skills: [".NET Core", "MySQL"],
     styles: ["netcore", "mysql"],
@@ -127,7 +127,7 @@ export const ProjectList = [
   },
   {
     name: "Calculator",
-    gradient: "#a6191b",
+    gradient: "#4cb050",
     image: Proj6,
     skills: ["React.js", "HTML", "CSS", "JavaScript"],
     styles: ["react", "html", "css", "javascript"],
