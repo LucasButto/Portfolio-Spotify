@@ -7,7 +7,7 @@ export const useViewTransitionNavigation = () => {
     if (!document.startViewTransition) {
       return navigate(newRoute);
     } else {
-      return document.startViewTransition(() => {
+      document.startViewTransition(() => {
         navigate(newRoute);
       });
     }
