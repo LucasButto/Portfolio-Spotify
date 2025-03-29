@@ -3,16 +3,18 @@ import "../Styles/Modal.css";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 
 const Modal = ({ children, setModal }) => {
+  const handleClose = (e) => {
+    if (e.target.classList.contains("modal")) {
+      setModal(false);
+    }
+  };
+
   return (
-    <div className="modal">
-      <div className="modal-container">
-        <div className="modal-header">
-          <button onClick={() => setModal(false)}>
-            <CloseRoundedIcon />
-          </button>
-        </div>
-        <div className="modal-body">{children}</div>
-      </div>
+    <div className="modal" onClick={handleClose}>
+      <button className="close-button" onClick={handleClose}>
+        <CloseRoundedIcon />
+      </button>
+      <div className="modal-body">{children}</div>
     </div>
   );
 };
