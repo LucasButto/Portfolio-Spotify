@@ -61,24 +61,24 @@ const Aside = () => {
               <li>
                 <div
                   onClick={() => {
-                    viewNavigate("/education");
-                  }}
-                >
-                  <div className={checkPath("/education")}>
-                    <SchoolRoundedIcon />
-                    <span>Education</span>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div
-                  onClick={() => {
                     viewNavigate("/projects");
                   }}
                 >
                   <div className={checkPath("/projects")}>
                     <CodeRoundedIcon />
                     <span>Projects</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div
+                  onClick={() => {
+                    viewNavigate("/education");
+                  }}
+                >
+                  <div className={checkPath("/education")}>
+                    <SchoolRoundedIcon />
+                    <span>Education</span>
                   </div>
                 </div>
               </li>
