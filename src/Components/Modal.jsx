@@ -11,7 +11,7 @@ const Modal = ({ children, setModal }) => {
 
   return (
     <div className="modal" onClick={handleClose}>
-      <button className="close-button" onClick={handleClose}>
+      <button className="close-button" onClick={() => setModal(false)}>
         <CloseRoundedIcon />
       </button>
       <div className="modal-body">{children}</div>
