@@ -84,6 +84,10 @@ const ProjectDisplay = () => {
         </div>
       </div>
 
+      <div className="description">
+        <p>{project.description}</p>
+      </div>
+
       {Boolean(project.skills) && (
         <div className="skills-container">
           <h3>Skills used:</h3>

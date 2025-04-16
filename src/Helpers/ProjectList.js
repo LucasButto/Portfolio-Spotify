@@ -102,18 +102,20 @@ export const ProjectList = [
     skills: [".NET Core", "MySQL"],
     styles: ["netcore", "mysql"],
     github: "https://github.com/LucasButto/store-management-api",
-  },
-  {
-    name: "Pointer Game",
-    gradient: "#277370",
-    image: Proj4,
-    skills: ["HTML", "CSS", "JavaScript"],
-    styles: ["html", "css", "javascript"],
-    github: "https://github.com/LucasButto/Juego-Web",
-    link: "https://lucasbutto.github.io/Juego-Web/",
     description:
-      "This project is a game of skill and speed where the goal is to score points by hovering over a circle until reaching 30 before the time runs out.",
+      "RESTful API for managing store products, developed with .NET and SQL Server. It supports full CRUD operations and includes integrated authentication.",
   },
+  // {
+  //   name: "Pointer Game",
+  //   gradient: "#277370",
+  //   image: Proj4,
+  //   skills: ["HTML", "CSS", "JavaScript"],
+  //   styles: ["html", "css", "javascript"],
+  //   github: "https://github.com/LucasButto/Juego-Web",
+  //   link: "https://lucasbutto.github.io/Juego-Web/",
+  //   description:
+  //     "This project is a game of skill and speed where the goal is to score points by hovering over a circle until reaching 30 before the time runs out.",
+  // },
   {
     name: "ToDo-List",
     gradient: "#d7d7d7",
@@ -134,17 +136,17 @@ export const ProjectList = [
     github: "https://github.com/LucasButto/Calculator",
     link: "https://lucasbutto.github.io/Calculator/",
   },
-  {
-    name: "Tic Tac Toe",
-    gradient: "#d7d7d7",
-    image: Proj7,
-    skills: ["React.js", "HTML", "CSS", "JavaScript"],
-    styles: ["react", "html", "css", "javascript"],
-    github: "https://github.com/LucasButto/tic-tac-toe",
-    link: "https://lucasbutto.github.io/tic-tac-toe/",
-    description:
-      "This is a simple calculator application developed in React. With this application, users can perform basic mathematical operations such as addition, subtraction, multiplication, and division.",
-  },
+  // {
+  //   name: "Tic Tac Toe",
+  //   gradient: "#d7d7d7",
+  //   image: Proj7,
+  //   skills: ["React.js", "HTML", "CSS", "JavaScript"],
+  //   styles: ["react", "html", "css", "javascript"],
+  //   github: "https://github.com/LucasButto/tic-tac-toe",
+  //   link: "https://lucasbutto.github.io/tic-tac-toe/",
+  //   description:
+  //     "This is a simple calculator application developed in React. With this application, users can perform basic mathematical operations such as addition, subtraction, multiplication, and division.",
+  // },
   {
     name: "More In Progress",
     gradient: "#c49c3d",

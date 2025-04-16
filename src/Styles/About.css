@@ -132,7 +132,7 @@ article > p > span {
     margin: auto;
   }
   article > p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .lastest-project-container {
     flex-direction: column;
