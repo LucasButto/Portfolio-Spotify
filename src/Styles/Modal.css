@@ -30,7 +30,7 @@
 }
 
 .modal-body {
-  overflow: auto;
+  overflow: hidden;
   display: grid;
   place-items: center;
   max-width: 90%;

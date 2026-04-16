@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import PropTypes from "prop-types";
 import PlayCircleRoundedIcon from "@mui/icons-material/PlayCircleRounded";
 import PauseCircleFilledRoundedIcon from "@mui/icons-material/PauseCircleFilledRounded";
@@ -10,6 +11,8 @@ const ExperienceItem = ({
   description,
   date,
 }) => {
+  const contentRef = useRef(null);
+
   return (
     <>
       <li
@@ -33,7 +36,17 @@ const ExperienceItem = ({
             </h3>
           </div>
         </div>
-        {shownItem[id] ? <span>{description}</span> : null}
+        <div
+          className="item-content-wrapper"
+          ref={contentRef}
+          style={{
+            maxHeight: shownItem[id]
+              ? contentRef.current?.scrollHeight + "px"
+              : "0px",
+          }}
+        >
+          <span>{description}</span>
+        </div>
       </li>
     </>
   );

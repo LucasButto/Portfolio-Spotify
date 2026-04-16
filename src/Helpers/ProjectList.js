@@ -10,8 +10,27 @@ import Proj8 from "./Assets/proj8.jpg";
 import Proj9 from "./Assets/proj9.jpg";
 import Proj10 from "./Assets/proj10.jpg";
 import Proj11 from "./Assets/proj11.jpg";
+import Proj12 from "./Assets/proj12.jpg";
 
 export const ProjectList = [
+  {
+    name: "Nextflix",
+    gradient: "#E50914",
+    image: Proj12,
+    skills: [
+      "Next.js",
+      "React.js",
+      "TypeScript",
+      "SCSS",
+      "Firebase",
+      "TMDB API",
+    ],
+    styles: ["nextjs", "react", "typescript", "scss", "firebase", "tmdb"],
+    github: "https://github.com/LucasButto/Nextflix",
+    link: "https://nextflix-web.vercel.app/",
+    description:
+      "Development of a Netflix-style movie and series discovery platform built with Next.js 16, React 19, and TypeScript. Features bilingual support (Spanish & English), Firebase authentication and Firestore persistence, TMDB API integration for content data, and a responsive design with Material UI. Includes watchlist management, detailed content pages with trailers and fun facts, user reviews, timezone-aware date logic, and advanced filtering capabilities.",
+  },
   {
     name: "Architect Julian Peisino Portfolio",
     gradient: "#7FD5FD",
@@ -84,17 +103,17 @@ export const ProjectList = [
     description:
       "This project is a Pomodoro clock application written in React. Pomodoro is a productivity method that involves working in short time blocks followed by short breaks. This clock will help you stay focused and improve your productivity.",
   },
-  {
-    name: "Weather App",
-    gradient: "#039189",
-    image: Proj2,
-    skills: ["HTML", "CSS", "JavaScript"],
-    styles: ["html", "css", "javascript"],
-    github: "https://github.com/LucasButto/Clima-App",
-    link: "https://lucasbutto.github.io/Clima-App/index.html",
-    description:
-      "This project is a web application that displays real-time weather in any location around the world. It has been built using HTML, CSS and JavaScript and uses the OpenWeatherMap API to get weather information.",
-  },
+  // {
+  //   name: "Weather App",
+  //   gradient: "#039189",
+  //   image: Proj2,
+  //   skills: ["HTML", "CSS", "JavaScript"],
+  //   styles: ["html", "css", "javascript"],
+  //   github: "https://github.com/LucasButto/Clima-App",
+  //   link: "https://lucasbutto.github.io/Clima-App/index.html",
+  //   description:
+  //     "This project is a web application that displays real-time weather in any location around the world. It has been built using HTML, CSS and JavaScript and uses the OpenWeatherMap API to get weather information.",
+  // },
   {
     name: "CRUD API",
     gradient: "#7dd438",
@@ -116,26 +135,26 @@ export const ProjectList = [
   //   description:
   //     "This project is a game of skill and speed where the goal is to score points by hovering over a circle until reaching 30 before the time runs out.",
   // },
-  {
-    name: "ToDo-List",
-    gradient: "#d7d7d7",
-    image: Proj5,
-    skills: ["React.js", "HTML", "CSS", "JavaScript"],
-    styles: ["react", "html", "css", "javascript"],
-    github: "https://github.com/LucasButto/todo-list",
-    link: "https://lucasbutto.github.io/todo-list/",
-    description:
-      "Welcome to the React Todo List project, where the information is stored in the browser's localstorage.",
-  },
-  {
-    name: "Calculator",
-    gradient: "#4cb050",
-    image: Proj6,
-    skills: ["React.js", "HTML", "CSS", "JavaScript"],
-    styles: ["react", "html", "css", "javascript"],
-    github: "https://github.com/LucasButto/Calculator",
-    link: "https://lucasbutto.github.io/Calculator/",
-  },
+  // {
+  //   name: "ToDo-List",
+  //   gradient: "#d7d7d7",
+  //   image: Proj5,
+  //   skills: ["React.js", "HTML", "CSS", "JavaScript"],
+  //   styles: ["react", "html", "css", "javascript"],
+  //   github: "https://github.com/LucasButto/todo-list",
+  //   link: "https://lucasbutto.github.io/todo-list/",
+  //   description:
+  //     "Welcome to the React Todo List project, where the information is stored in the browser's localstorage.",
+  // },
+  // {
+  //   name: "Calculator",
+  //   gradient: "#4cb050",
+  //   image: Proj6,
+  //   skills: ["React.js", "HTML", "CSS", "JavaScript"],
+  //   styles: ["react", "html", "css", "javascript"],
+  //   github: "https://github.com/LucasButto/Calculator",
+  //   link: "https://lucasbutto.github.io/Calculator/",
+  // },
   // {
   //   name: "Tic Tac Toe",
   //   gradient: "#d7d7d7",

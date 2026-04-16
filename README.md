@@ -9,7 +9,6 @@ The portfolio consists of four distinct pages:
 - <b>Home:</b> The main page where information about me, my skills, and experience can be found.
 - <b>Projects:</b> A page where all the projects I have worked on can be explored. Details such as the technology used and the results obtained are displayed.
 - <b>Experience:</b> A page where information about my education, previous work experience, and professional career as a developer can be found.
-- <b>Contact:</b> A page with a form to get in touch with me in case of any questions about my experience or skills or if anyone would like to work with me on a project.
 
 ## Technologies Used
 
