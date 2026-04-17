@@ -7,11 +7,10 @@ const SocialMediaButton = ({ link, title, icon, name }) => {
   return (
     <a
       href={link}
-      target={isResume ? "" : "_blank"}
+      target="_blank"
       rel={isResume ? "" : "noreferrer"}
       title={title}
       className="social-link"
-      download={isResume ? "LucasButtoCV.pdf" : ""}
       type={isResume ? "application/pdf" : ""}
     >
       {icon}
