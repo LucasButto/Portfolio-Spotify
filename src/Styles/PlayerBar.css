@@ -1,7 +1,7 @@
 .player-bar {
   position: sticky;
-  bottom: -8px;
-  height: 72px;
+  bottom: 0;
+  height: 85px;
   background-color: #121212;
   border-top: 1px solid #282828;
   border-radius: 0 0 5px 5px;

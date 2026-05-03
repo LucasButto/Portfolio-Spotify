@@ -23,9 +23,8 @@ const Main = () => {
   return (
     <main>
       <div ref={scrollContainerRef} className="main-container">
-        <TopContainer />
-
         <div className="main-content">
+          <TopContainer />
           <Routes>
             <Route path="*" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
@@ -33,9 +32,8 @@ const Main = () => {
             <Route path="/experience" element={<Experience />} />
             <Route path="/education" element={<Education />} />
           </Routes>
+          <PlayerBar />
         </div>
-
-        <PlayerBar />
       </div>
     </main>
   );
