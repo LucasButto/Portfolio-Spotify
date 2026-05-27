@@ -17,6 +17,9 @@ import nextjs from "./Logos/nextjs.png";
 import typescript from "./Logos/typescript.png";
 import sass from "./Logos/sass.png";
 import postman from "./Logos/postman.png";
+import nodejs from "./Logos/nodejs.png";
+import jira from "./Logos/jira.png";
+import trello from "./Logos/trello.png";
 
 export const SkillsList = [
   {
@@ -93,6 +96,12 @@ export const SkillsList = [
     title: "Backend",
     items: [
       {
+        title: "Node.js (learning)",
+        image: nodejs,
+        styles: "skillItem nodejs",
+        link: "https://www.youtube.com/playlist?list=PLUofhDIg_38qm2oPOV-IRTTEKyrVBBaU7",
+      },
+      {
         title: ".NET Core",
         image: netcore,
         styles: "skillItem netcore",
@@ -132,6 +141,18 @@ export const SkillsList = [
         image: visualstudio2022,
         styles: "skillItem visualstudio2022",
         link: "https://docs.microsoft.com/en-us/visualstudio/",
+      },
+      {
+        title: "Jira",
+        image: jira,
+        styles: "skillItem jira",
+        link: "https://www.atlassian.com/es/software/jira/guides/getting-started/introduction#what-is-jira-software",
+      },
+      {
+        title: "Trello",
+        image: trello,
+        styles: "skillItem trello",
+        link: "https://trello.com/guide",
       },
       {
         title: "Firebase",

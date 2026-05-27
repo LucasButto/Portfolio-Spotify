@@ -5,7 +5,7 @@
   width: 100%;
   gap: 20px;
   padding: 0 30px;
-  padding-bottom: 20px;
+  padding-bottom: 100px;
 }
 
 article {
@@ -127,6 +127,10 @@ article > p > span {
 }
 
 @media (width < 768px) {
+  .articles-containers {
+    padding-bottom: 20px;
+  }
+
   article > h3 {
     font-size: 1.5rem;
     margin: auto;
@@ -147,7 +151,7 @@ article > p > span {
   }
 
   .right-container > p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .right-container > .links {
     margin: auto;

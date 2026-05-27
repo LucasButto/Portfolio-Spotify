@@ -1,6 +1,7 @@
 .player-bar {
-  position: sticky;
-  bottom: 0;
+  position: fixed;
+  bottom: 8px;
+  width: calc(75% - 22px);
   height: 85px;
   background-color: #121212;
   border-top: 1px solid #282828;

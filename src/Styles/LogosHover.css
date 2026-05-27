@@ -60,7 +60,7 @@ ul > .git:hover {
 
 .mapped-skills > .github:hover,
 ul > .github:hover {
-  background: rgb(13, 38, 54, 0.5);
+  background: #16405c;
 }
 
 .mapped-skills > .visualstudiocode:hover,
@@ -91,4 +91,34 @@ ul > .sass:hover {
 .mapped-skills > .postman:hover,
 ul > .postman:hover {
   background: #ff6c3780;
+}
+
+.mapped-skills > .wordpress:hover,
+ul > .wordpress:hover {
+  background: #0a79a4;
+}
+
+.mapped-skills > .elementor:hover,
+ul > .elementor:hover {
+  background: #950841;
+}
+
+.mapped-skills > .googleads:hover,
+ul > .googleads:hover {
+  background: #4285f4;
+}
+
+.mapped-skills > .nodejs:hover,
+ul > .nodejs:hover {
+  background: #4a6a2d;
+}
+
+.mapped-skills > .jira:hover,
+ul > .jira:hover {
+  background: #12417e;
+}
+
+.mapped-skills > .trello:hover,
+ul > .trello:hover {
+  background: #005d93;
 }

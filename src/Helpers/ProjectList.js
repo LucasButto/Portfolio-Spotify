@@ -11,6 +11,8 @@ import Proj9 from "./Assets/proj9.jpg";
 import Proj10 from "./Assets/proj10.jpg";
 import Proj11 from "./Assets/proj11.jpg";
 import Proj12 from "./Assets/proj12.jpg";
+import Proj13 from "./Assets/proj13.jpg";
+import Proj14 from "./Assets/proj14.jpg";
 
 export const ProjectList = [
   {
@@ -40,6 +42,28 @@ export const ProjectList = [
     link: "https://Peisino.com.ar/",
     description:
       "Development of a website for architect Julián Peisino using Next.js for the frontend and Firebase for backend data management. The platform showcases architectural projects dynamically and optimally, ensuring smooth navigation and an intuitive user experience.",
+  },
+  {
+    name: "AMECOM Internet",
+    gradient: "#7B2FBE",
+    image: Proj14,
+    skills: ["WordPress", "Elementor", "Google Ads", "HTML", "CSS"],
+    styles: ["wordpress", "elementor", "googleads", "html", "css"],
+    github: "",
+    link: "https://amecom.com.ar",
+    description:
+      "Web optimization project for AMECOM Internet, an ISP serving rural and industrial zones in Argentina. Work included Google Ads pixel installation and conversion tracking setup via Insert Headers and Footers, replacement of a third-party chatbot with a direct WhatsApp contact button, content reorganization using Elementor's Theme Builder and structure panel, and configuration of WhatsApp inquiry buttons per service plan using JetEngine dynamic templates. All interactions are tracked as conversion events in Google Ads.",
+  },
+  {
+    name: "HomeSteelHome",
+    gradient: "#fded00",
+    image: Proj13,
+    skills: ["HTML5", "CSS3", "JavaScript"],
+    styles: ["html", "css", "javascript"],
+    github: "",
+    link: "https://homesteelhome.com.ar/",
+    description:
+      "Design and development of a commercial landing page for HomeSteelHome, a steel construction products brand based in Rosario, Argentina. Built with semantic HTML5, vanilla CSS and JavaScript — no frameworks. Features a multi-image hero carousel with CSS opacity transitions and JS auto-rotation, a responsive 3×2 product grid with glassmorphism overlays, SVG trapezoid curve at the hero base, scroll-driven fade-in animations, and a fixed WhatsApp CTA. Fully responsive across mobile, tablet, laptop and 2K+ viewports, validated with Playwright screenshot testing. Deployed to Latin Cloud with a NIC Argentina domain and SSL via CloudPanel.",
   },
   {
     name: "Bienenstock Corp. ERP System",

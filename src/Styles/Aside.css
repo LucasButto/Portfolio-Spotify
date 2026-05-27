@@ -62,7 +62,8 @@
   cursor: pointer;
 }
 
-.current-nav {
+.current-nav,
+.current-nav:hover {
   color: #1ed760;
 }
 
