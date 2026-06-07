@@ -13,8 +13,27 @@ import Proj11 from "./Assets/proj11.jpg";
 import Proj12 from "./Assets/proj12.jpg";
 import Proj13 from "./Assets/proj13.jpg";
 import Proj14 from "./Assets/proj14.jpg";
+import Proj15 from "./Assets/proj15.jpg";
 
 export const ProjectList = [
+  {
+    name: "Flowly",
+    gradient: "#6366F1",
+    image: Proj15,
+    skills: [
+      "Next.js",
+      "React.js",
+      "TypeScript",
+      "SCSS",
+      "Firebase",
+      "Google Calendar API",
+    ],
+    styles: ["nextjs", "react", "typescript", "scss", "firebase", "google"],
+    github: "https://github.com/LucasButto/Flowly",
+    link: "https://flowly-habits.vercel.app/",
+    description:
+      "Development of an all-in-one productivity web app to organize habits, routines, tasks, and events, built with Next.js 16, React 19, and TypeScript. Features Google authentication and Firestore persistence, a routines tracker with streaks and daily/weekly/monthly/yearly statistics, a to-do system with lists, subtasks, drag & drop, and favorites, and a full calendar with day/week/month/year views, recurring events (yearly and business-day rules), conflict detection, reminders, and two-way Google Calendar sync. Also includes a Pomodoro timer with custom named presets, light/dark theming via CSS variables, an installable PWA, skeleton loaders, and a fully responsive, internationalized interface.",
+  },
   {
     name: "Nextflix",
     gradient: "#E50914",
