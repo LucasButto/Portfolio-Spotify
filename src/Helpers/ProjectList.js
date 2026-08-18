@@ -14,8 +14,20 @@ import Proj12 from "./Assets/proj12.jpg";
 import Proj13 from "./Assets/proj13.jpg";
 import Proj14 from "./Assets/proj14.jpg";
 import Proj15 from "./Assets/proj15.jpg";
+import Proj16 from "./Assets/Proj16.png";
 
 export const ProjectList = [
+  {
+    name: "Prosperi",
+    gradient: "#cf9169",
+    image: Proj16,
+    imageAlign: "left",
+    skills: ["React.js", "TypeScript", "SASS"],
+    styles: ["react", "typescript", "sass"],
+    link: "https://prosperisrl.com/",
+    description:
+      "Development of a portfolio website for Prosperi, a high-standard residential and commercial construction company based in Rosario, Argentina. Built with React, TypeScript and Vite, featuring an editorial dark theme with serif/sans typography, a filterable project gallery organized by trade category (Albañilería, Pintura, Revestimientos, Trabajos de Altura), and on-demand image optimization via Netlify's image CDN. Includes a philosophy section, a spam-protected contact form, and Instagram integration, fully responsive and deployed on Netlify.",
+  },
   {
     name: "Flowly",
     gradient: "#6366F1",
@@ -24,11 +36,11 @@ export const ProjectList = [
       "Next.js",
       "React.js",
       "TypeScript",
-      "SCSS",
+      "SASS",
       "Firebase",
       "Google Calendar API",
     ],
-    styles: ["nextjs", "react", "typescript", "scss", "firebase", "google"],
+    styles: ["nextjs", "react", "typescript", "sass", "firebase", "google"],
     github: "https://github.com/LucasButto/Flowly",
     link: "https://flowly-habits.vercel.app/",
     description:
@@ -42,11 +54,11 @@ export const ProjectList = [
       "Next.js",
       "React.js",
       "TypeScript",
-      "SCSS",
+      "SASS",
       "Firebase",
       "TMDB API",
     ],
-    styles: ["nextjs", "react", "typescript", "scss", "firebase", "tmdb"],
+    styles: ["nextjs", "react", "typescript", "sass", "firebase", "tmdb"],
     github: "https://github.com/LucasButto/Nextflix",
     link: "https://nextflix-web.vercel.app/",
     description:
