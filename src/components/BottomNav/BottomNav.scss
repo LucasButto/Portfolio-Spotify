@@ -1,0 +1,55 @@
+@use "@/styles/variables" as v;
+@use "@/styles/mixins" as m;
+
+.bottom-nav {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  align-items: stretch;
+  flex-shrink: 0;
+  padding: 6px 0 max(6px, env(safe-area-inset-bottom));
+  background-color: var(--sidebar);
+  border-radius: v.$radius-lg;
+
+  // The sidebar covers navigation from tablet up.
+  @include m.from(v.$bp-md) {
+    display: none;
+  }
+
+  &__item {
+    @include m.reset-button;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    min-width: 0;
+    padding: 4px 2px;
+    color: var(--sidebar-foreground);
+    transition: color 0.2s v.$ease;
+
+    &--active {
+      color: var(--primary);
+    }
+  }
+
+  &__icon {
+    flex-shrink: 0;
+
+    &.MuiSvgIcon-root {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__label {
+    // Six labels have to share a phone width, so the type is deliberately
+    // small and clamped rather than truncated.
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: clamp(0.5rem, 2.3vw, 0.625rem);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+}
