@@ -1,0 +1,62 @@
+@use "@/styles/variables" as v;
+@use "@/styles/mixins" as m;
+
+$switch-height: 30px;
+$switch-padding: 3px;
+$label-width: 36px;
+
+.lang-switcher {
+  @include m.reset-button;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: $switch-height;
+  width: calc(#{$label-width} * 2 + #{$switch-padding} * 2);
+  padding: $switch-padding;
+  border-radius: v.$radius-full;
+  border: 1px solid var(--border);
+  background-color: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  transition: background-color 0.2s v.$ease;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.14);
+  }
+
+  // Sliding pill that marks the active language.
+  &__knob {
+    position: absolute;
+    top: $switch-padding;
+    left: $switch-padding;
+    width: $label-width;
+    height: calc(#{$switch-height} - #{$switch-padding} * 2 - 2px);
+    border-radius: v.$radius-full;
+    background-color: var(--primary);
+    box-shadow: 0 2px 8px rgba(29, 185, 84, 0.45);
+    pointer-events: none;
+    transition: transform 0.25s v.$ease;
+  }
+
+  &--en &__knob {
+    transform: translateX($label-width);
+  }
+
+  &__label {
+    position: relative;
+    z-index: 1;
+    width: $label-width;
+    text-align: center;
+    font-size: 0.6875rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    color: var(--muted-foreground);
+    pointer-events: none;
+    transition: color 0.25s v.$ease;
+
+    &--active {
+      color: var(--primary-foreground);
+    }
+  }
+}
