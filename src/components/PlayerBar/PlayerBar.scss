@@ -1,0 +1,276 @@
+@use "@/styles/variables" as v;
+@use "@/styles/mixins" as m;
+
+.player-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: v.$player-height;
+  padding: 0 16px;
+  background-color: var(--sidebar);
+  border-radius: v.$radius-lg;
+
+  // On phones it sits right on top of the black tab bar, so it takes the
+  // lighter "mini player" surface Spotify uses to separate the two.
+  @include m.until(v.$bp-md) {
+    height: 64px;
+    padding: 0 12px;
+    background-color: var(--elevated);
+  }
+
+  &__track {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+
+    @include m.from(v.$bp-md) {
+      width: 30%;
+    }
+  }
+
+  &__cover {
+    position: relative;
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: v.$radius-sm;
+    overflow: hidden;
+    background-color: var(--card);
+
+    @include m.until(v.$bp-md) {
+      width: 44px;
+      height: 44px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__equalizer {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 3px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  &__eq-bar {
+    width: 3px;
+    height: 40%;
+    border-radius: v.$radius-full;
+    background-color: var(--primary);
+    animation: equalizer 0.9s ease-in-out infinite;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+
+  &__title {
+    @include m.truncate;
+    max-width: 100%;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--foreground);
+    text-align: left;
+
+    &--link {
+      @include m.reset-button;
+      @include m.truncate;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__subtitle {
+    @include m.truncate;
+    font-size: 0.75rem;
+    color: var(--muted-foreground);
+  }
+
+  &__like {
+    @include m.reset-button;
+    display: none;
+    flex-shrink: 0;
+    margin-left: 4px;
+    color: var(--muted-foreground);
+    transition: color 0.2s v.$ease;
+
+    svg {
+      font-size: 1.125rem;
+    }
+
+    &:hover {
+      color: var(--foreground);
+    }
+
+    &--on {
+      color: var(--primary);
+    }
+
+    @include m.from(v.$bp-sm) {
+      display: block;
+    }
+  }
+
+  &__center {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    max-width: 45%;
+
+    @include m.until(v.$bp-sm) {
+      max-width: none;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__ghost {
+    @include m.reset-button;
+    display: inline-flex;
+    align-items: center;
+    color: var(--muted-foreground);
+    transition: color 0.2s v.$ease;
+
+    svg {
+      font-size: 1.375rem;
+    }
+
+    &:hover:not(:disabled) {
+      color: var(--foreground);
+    }
+
+    &:disabled {
+      opacity: 0.45;
+      cursor: default;
+    }
+
+    &--wide {
+      display: none;
+
+      svg {
+        font-size: 1.125rem;
+      }
+
+      @include m.from(v.$bp-sm) {
+        display: inline-flex;
+      }
+    }
+  }
+
+  &__main {
+    @include m.reset-button;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: v.$radius-full;
+    background-color: var(--foreground);
+    color: var(--background);
+    transition: transform 0.2s v.$ease;
+
+    svg {
+      font-size: 1.375rem;
+    }
+
+    &:hover {
+      transform: scale(1.06);
+    }
+  }
+
+  &__progress {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+
+    @include m.until(v.$bp-sm) {
+      display: none;
+    }
+  }
+
+  &__time {
+    width: 34px;
+    font-size: 0.6875rem;
+    color: var(--muted-foreground);
+    font-variant-numeric: tabular-nums;
+
+    &:first-child {
+      text-align: right;
+    }
+  }
+
+  &__rail {
+    position: relative;
+    flex: 1;
+    height: 4px;
+    border-radius: v.$radius-full;
+    background-color: var(--secondary);
+
+    &:hover .player-bar__fill {
+      background-color: var(--primary);
+    }
+  }
+
+  &__fill {
+    height: 100%;
+    border-radius: v.$radius-full;
+    background-color: var(--foreground);
+    transition: background-color 0.2s v.$ease;
+  }
+
+  &__extra {
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+
+    @include m.from(v.$bp-md) {
+      display: flex;
+      width: 30%;
+    }
+  }
+
+  &__volume-icon {
+    color: var(--muted-foreground);
+
+    &.MuiSvgIcon-root {
+      font-size: 1.125rem;
+    }
+  }
+
+  &__volume {
+    width: 92px;
+    height: 4px;
+    border-radius: v.$radius-full;
+    background-color: var(--secondary);
+  }
+
+  &__volume-fill {
+    width: 66%;
+    height: 100%;
+    border-radius: v.$radius-full;
+    background-color: var(--foreground);
+  }
+}

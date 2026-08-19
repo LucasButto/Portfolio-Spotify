@@ -1,0 +1,22 @@
+// ---------------------------------------------------------------------------
+// Layout metrics & breakpoints
+// ---------------------------------------------------------------------------
+
+$shell-gap: 8px;
+$sidebar-width: 264px;
+$player-height: 80px;
+$content-max-width: 1152px;
+
+$radius-sm: 4px;
+$radius-md: 6px;
+$radius-lg: 8px;
+$radius-xl: 12px;
+$radius-full: 9999px;
+
+// Breakpoints (mobile first)
+$bp-sm: 640px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;
+
+$ease: cubic-bezier(0.4, 0, 0.2, 1);

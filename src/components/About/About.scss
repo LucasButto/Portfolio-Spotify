@@ -1,0 +1,24 @@
+@use "@/styles/variables" as v;
+@use "@/styles/mixins" as m;
+
+.about {
+  scroll-margin-top: 16px;
+  padding: 32px 24px;
+
+  @include m.from(v.$bp-md) {
+    padding: 32px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 40rem;
+    margin-top: 24px;
+
+    p {
+      line-height: 1.7;
+      color: var(--muted-foreground);
+    }
+  }
+}

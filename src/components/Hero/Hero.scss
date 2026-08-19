@@ -1,0 +1,188 @@
+@use "@/styles/variables" as v;
+@use "@/styles/mixins" as m;
+
+.hero {
+  scroll-margin-top: 16px;
+
+  &__banner {
+    position: relative;
+    overflow: hidden;
+    border-radius: v.$radius-lg;
+  }
+
+  &__backdrop {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(
+        120% 90% at 20% 0%,
+        rgba(29, 185, 84, 0.45) 0%,
+        rgba(29, 185, 84, 0) 60%
+      ),
+      linear-gradient(180deg, #2b6b45 0%, var(--background) 78%);
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 60px 24px 32px;
+
+    @include m.from(v.$bp-md) {
+      flex-direction: row;
+      align-items: flex-end;
+      // Matches .portfolio__sections' own max-width + centering so the
+      // avatar/name line up with "About Me" and the rest of the sections
+      // below, instead of hugging the banner's full-bleed left edge.
+      max-width: v.$content-max-width;
+      margin: 0 auto;
+      padding: 100px 32px 32px 24px;
+    }
+  }
+
+  &__avatar {
+    width: 176px;
+    height: 176px;
+    flex-shrink: 0;
+    border-radius: v.$radius-full;
+    background-color: var(--card);
+    background-size: 100% auto;
+    //background-position: 41% 3%;
+    background-repeat: no-repeat;
+    box-shadow: var(--shadow-lg);
+
+    @include m.from(v.$bp-md) {
+      width: 208px;
+      height: 208px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 0;
+  }
+
+  &__verified {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--foreground);
+
+    svg {
+      font-size: 1.25rem;
+      color: var(--primary-hover);
+    }
+  }
+
+  &__name {
+    @include m.display-font;
+    font-size: clamp(2.75rem, 9vw, 6rem);
+    font-weight: 900;
+    line-height: 1;
+    color: var(--foreground);
+  }
+
+  &__meta {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+  }
+
+  &__actions {
+    // Column layout so "now playing" always lands on its own line below the
+    // button row, whatever that row wraps into — no flex-basis guesswork.
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+
+    @include m.from(v.$bp-md) {
+      // Same max-width + centering as .hero__content above, so the play
+      // button and social pills start at the same x as "About Me".
+      max-width: v.$content-max-width;
+      margin: 0 auto;
+      padding: 24px 32px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 16px;
+
+    @include m.from(v.$bp-md) {
+      justify-content: unset;
+      gap: 20px;
+    }
+  }
+
+  &__play {
+    @include m.reset-button;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: v.$radius-full;
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    box-shadow: var(--shadow-md);
+    transition:
+      transform 0.2s v.$ease,
+      background-color 0.2s v.$ease;
+
+    svg {
+      font-size: 2rem;
+    }
+
+    &:hover {
+      transform: scale(1.06);
+      background-color: var(--primary-hover);
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+
+  &__now-playing {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--primary);
+    padding-top: 0.25rem;
+    // Hidden with visibility (not display/unmount) so the line always holds
+    // its space and the rest of the page never jumps when playback starts.
+    transition:
+      opacity 0.25s v.$ease,
+      visibility 0s;
+
+    &--hidden {
+      opacity: 0;
+      visibility: hidden;
+      transition:
+        opacity 0.25s v.$ease,
+        visibility 0s 0.25s;
+    }
+  }
+
+  &__links {
+    // A deliberate 2x2 grid on phones — each column sized to its own content
+    // — so the play button centers against a compact block instead of a
+    // stray row of pills. Desktop has room to just let them flow in a line.
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 8px 12px;
+
+    @include m.from(v.$bp-md) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+  }
+}
