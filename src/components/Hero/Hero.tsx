@@ -42,6 +42,13 @@ const Hero = () => {
   return (
     <section className="hero" id="home" aria-label={copy.hero.label}>
       <div className="hero__banner">
+        {/* Mobile-only full-bleed photo, Spotify artist-page style. */}
+        <div
+          className="hero__photo"
+          role="img"
+          aria-label={copy.hero.photoOf(profile.name)}
+          style={{ backgroundImage: `url(${profile.banner})` }}
+        />
         <div className="hero__backdrop" aria-hidden="true" />
         <div className="hero__content">
           <div
