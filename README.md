@@ -24,12 +24,13 @@ scrollable content stage and a player bar that "plays" the projects.
 ## Project structure
 
 ```
+public/            images, project covers and technology logos
 src/
-├─ assets/         images, project covers and technology logos
 ├─ components/     one folder per component with its .tsx and .scss
 ├─ context/        player state (current project, play/pause, modal)
 ├─ data/           profile, skills, experience, projects and education
 ├─ hooks/          usePlayer
+├─ i18n/           interface copy for both languages
 ├─ styles/         tokens, variables, mixins and global styles
 ├─ types/          shared TypeScript types
 └─ utils/          date helpers
@@ -61,7 +62,7 @@ through my GitHub profile.
 ## Screenshot
 
 <p align="center">
-    <img src='./src/assets/img/proj.jpg' width="600" height="400">
+    <img src='./public/img/proj.jpg' width="600" height="400">
 </p>
 
 ## Test Project

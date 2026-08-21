@@ -1,4 +1,3 @@
-import avatar from "@/assets/img/avatar.jpeg";
 import type { AboutInfo, Profile } from "@/types/portfolio";
 
 export const profile: Profile = {
@@ -8,7 +7,8 @@ export const profile: Profile = {
     es: "Desarrollador FullStack",
   },
   verified: true,
-  avatar,
+  avatar: "/img/avatar.jpeg",
+  banner: "/img/Top-Img.jpg",
   email: "lbutto40@gmail.com",
   socials: [
     {

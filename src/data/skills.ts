@@ -1,28 +1,3 @@
-import bootstrap from "@/assets/logos/bootstrap.png";
-import claude from "@/assets/logos/claude.png";
-import claudecode from "@/assets/logos/claudecode.png";
-import codex from "@/assets/logos/codex.png";
-import csharp from "@/assets/logos/csharp.png";
-import css from "@/assets/logos/css.png";
-import firebase from "@/assets/logos/firebase.png";
-import git from "@/assets/logos/git.png";
-import github from "@/assets/logos/github.png";
-import githubcopilot from "@/assets/logos/githubcopilot.png";
-import html from "@/assets/logos/html.png";
-import javascript from "@/assets/logos/javascript.png";
-import jira from "@/assets/logos/jira.png";
-import mysql from "@/assets/logos/mysql.png";
-import netcore from "@/assets/logos/netcore.png";
-import nextjs from "@/assets/logos/nextjs.png";
-import nodejs from "@/assets/logos/nodejs.png";
-import postman from "@/assets/logos/postman.png";
-import python from "@/assets/logos/python.png";
-import react from "@/assets/logos/react.png";
-import sass from "@/assets/logos/sass.png";
-import trello from "@/assets/logos/trello.png";
-import typescript from "@/assets/logos/typescript.png";
-import visualstudio2022 from "@/assets/logos/visualstudio2022.png";
-import visualstudiocode from "@/assets/logos/visualstudiocode.png";
 import type { SkillGroup } from "@/types/portfolio";
 
 export const skillGroups: SkillGroup[] = [
@@ -31,22 +6,22 @@ export const skillGroups: SkillGroup[] = [
     items: [
       {
         name: "TypeScript",
-        logo: typescript,
+        logo: "/logos/typescript.png",
         link: "https://youtu.be/fUgxxhI_bvc?si=FP_gmO0UMxCykenj",
       },
       {
         name: "JavaScript",
-        logo: javascript,
+        logo: "/logos/javascript.png",
         link: "https://www.aprendejavascript.dev/",
       },
       {
         name: "C#",
-        logo: csharp,
+        logo: "/logos/csharp.png",
         link: "https://www.tutorialesprogramacionya.com/csharpya/",
       },
       {
         name: "Python",
-        logo: python,
+        logo: "/logos/python.png",
         link: "https://www.w3schools.com/python/",
       },
     ],
@@ -56,28 +31,28 @@ export const skillGroups: SkillGroup[] = [
     items: [
       {
         name: "Next.js",
-        logo: nextjs,
+        logo: "/logos/nextjs.png",
         link: "https://youtu.be/jMy4pVZMyLM?si=JyWwkmxq5w1oyREl",
       },
       {
         name: "React",
-        logo: react,
+        logo: "/logos/react.png",
         link: "https://github.com/midudev/aprendiendo-react",
       },
-      { name: "Sass", logo: sass, link: "https://sass-lang.com/guide/" },
+      { name: "Sass", logo: "/logos/sass.png", link: "https://sass-lang.com/guide/" },
       {
         name: "Bootstrap",
-        logo: bootstrap,
+        logo: "/logos/bootstrap.png",
         link: "https://getbootstrap.esdocu.com/docs/5.1/getting-started/introduction/",
       },
       {
         name: "CSS",
-        logo: css,
+        logo: "/logos/css.png",
         link: "https://github.com/LucasButto/Resumen-HTML-CSS-JS/tree/main/CSS",
       },
       {
         name: "HTML",
-        logo: html,
+        logo: "/logos/html.png",
         link: "https://github.com/LucasButto/Resumen-HTML-CSS-JS/tree/main/HTML",
       },
     ],
@@ -88,17 +63,17 @@ export const skillGroups: SkillGroup[] = [
       {
         name: "Node.js",
         note: { en: "learning", es: "aprendiendo" },
-        logo: nodejs,
+        logo: "/logos/nodejs.png",
         link: "https://www.youtube.com/playlist?list=PLUofhDIg_38qm2oPOV-IRTTEKyrVBBaU7",
       },
       {
         name: ".NET Core",
-        logo: netcore,
+        logo: "/logos/netcore.png",
         link: "https://www.youtube.com/playlist?list=PL0-hIHBwsOM5tjSkf1KRvS93aT6JbL8If",
       },
       {
         name: "MySQL",
-        logo: mysql,
+        logo: "/logos/mysql.png",
         link: "https://www.youtube.com/playlist?list=PLKZTJP_-zNEJfUwtbg2h4ewgaNK5dnzSp",
       },
     ],
@@ -111,17 +86,17 @@ export const skillGroups: SkillGroup[] = [
     items: [
       {
         name: "Claude Code",
-        logo: claudecode,
+        logo: "/logos/claudecode.png",
         link: "https://claude.com/product/claude-code",
       },
       {
         name: "Codex",
-        logo: codex,
+        logo: "/logos/codex.png",
         link: "https://openai.com/codex/",
       },
       {
         name: "GitHub Copilot",
-        logo: githubcopilot,
+        logo: "/logos/githubcopilot.png",
         link: "https://github.com/features/copilot",
       },
     ],
@@ -130,37 +105,37 @@ export const skillGroups: SkillGroup[] = [
     category: { en: "Tools", es: "Herramientas" },
     wide: true,
     items: [
-      { name: "Git", logo: git, link: "https://git-scm.com/doc" },
-      { name: "GitHub", logo: github, link: "https://github.com/" },
+      { name: "Git", logo: "/logos/git.png", link: "https://git-scm.com/doc" },
+      { name: "GitHub", logo: "/logos/github.png", link: "https://github.com/" },
       {
         name: "Visual Studio Code",
-        logo: visualstudiocode,
+        logo: "/logos/visualstudiocode.png",
         link: "https://code.visualstudio.com/docs",
       },
       {
         name: "Visual Studio 2022",
-        logo: visualstudio2022,
+        logo: "/logos/visualstudio2022.png",
         link: "https://docs.microsoft.com/en-us/visualstudio/",
       },
       {
         name: "Jira",
-        logo: jira,
+        logo: "/logos/jira.png",
         link: "https://www.atlassian.com/es/software/jira/guides/getting-started/introduction#what-is-jira-software",
       },
-      { name: "Trello", logo: trello, link: "https://trello.com/guide" },
+      { name: "Trello", logo: "/logos/trello.png", link: "https://trello.com/guide" },
       {
         name: "Firebase",
-        logo: firebase,
+        logo: "/logos/firebase.png",
         link: "https://firebase.google.com/docs",
       },
       {
         name: "Postman",
-        logo: postman,
+        logo: "/logos/postman.png",
         link: "https://learning.postman.com/docs/getting-started/introduction/",
       },
       {
         name: "Claude",
-        logo: claude,
+        logo: "/logos/claude.png",
         link: "https://claude.ai/",
       },
     ],

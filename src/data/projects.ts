@@ -1,15 +1,3 @@
-import proj1 from "@/assets/projects/proj1.jpg";
-import proj3 from "@/assets/projects/proj3.jpg";
-import proj8 from "@/assets/projects/proj8.jpg";
-import proj9 from "@/assets/projects/proj9.jpg";
-import proj10 from "@/assets/projects/proj10.jpg";
-import proj11 from "@/assets/projects/proj11.jpg";
-import proj12 from "@/assets/projects/proj12.jpg";
-import proj13 from "@/assets/projects/proj13.jpg";
-import proj14 from "@/assets/projects/proj14.jpg";
-import proj15 from "@/assets/projects/proj15.jpg";
-import proj16 from "@/assets/projects/Proj16.png";
-import projX from "@/assets/projects/projX.jpg";
 import type { Project } from "@/types/portfolio";
 
 export const projects: Project[] = [
@@ -21,7 +9,7 @@ export const projects: Project[] = [
       es: "Sitio web de constructora",
     },
     accent: "#cf9169",
-    image: proj16,
+    image: "/projects/Proj16.png",
     alignImage: "left",
     skills: ["React.js", "TypeScript", "SASS"],
     link: "https://prosperisrl.com/",
@@ -38,7 +26,7 @@ export const projects: Project[] = [
       es: "App de productividad todo en uno",
     },
     accent: "#6366F1",
-    image: proj15,
+    image: "/projects/proj15.jpg",
     alignImage: "left",
     skills: [
       "Next.js",
@@ -63,7 +51,7 @@ export const projects: Project[] = [
       es: "Plataforma de películas y series",
     },
     accent: "#E50914",
-    image: proj12,
+    image: "/projects/proj12.jpg",
     skills: [
       "Next.js",
       "React.js",
@@ -87,7 +75,7 @@ export const projects: Project[] = [
       es: "Portfolio de arquitectura",
     },
     accent: "#7FD5FD",
-    image: proj11,
+    image: "/projects/proj11.jpg",
     alignImage: "left",
     skills: ["Next.js", "React.js", "HTML", "CSS", "JavaScript", "Firebase"],
     link: "https://Peisino.com.ar/",
@@ -104,7 +92,7 @@ export const projects: Project[] = [
       es: "Optimización web para un ISP",
     },
     accent: "#7B2FBE",
-    image: proj14,
+    image: "/projects/proj14.jpg",
     skills: ["WordPress", "Elementor", "Google Ads", "HTML", "CSS"],
     link: "https://amecom.com.ar",
     description: {
@@ -120,7 +108,7 @@ export const projects: Project[] = [
       es: "Landing de construcción en acero",
     },
     accent: "#fded00",
-    image: proj13,
+    image: "/projects/proj13.jpg",
     skills: ["HTML5", "CSS3", "JavaScript"],
     link: "https://homesteelhome.com.ar/",
     description: {
@@ -136,7 +124,7 @@ export const projects: Project[] = [
       es: "ERP de gestión empresarial",
     },
     accent: "#c1c1c1",
-    image: proj10,
+    image: "/projects/proj10.jpg",
     alignImage: "left",
     skills: [
       "React.js",
@@ -163,7 +151,7 @@ export const projects: Project[] = [
       es: "Juego de adivinar el Pokémon",
     },
     accent: "#f2c004",
-    image: proj9,
+    image: "/projects/proj9.jpg",
     alignImage: "left",
     skills: ["React.js", "HTML", "CSS", "JavaScript"],
     github: "https://github.com/LucasButto/PokeQuiz",
@@ -181,7 +169,7 @@ export const projects: Project[] = [
       es: "Sistema de control de stock",
     },
     accent: "#0c98c7",
-    image: proj1,
+    image: "/projects/proj1.jpg",
     alignImage: "left",
     skills: ["React.js", "HTML", "CSS", "JavaScript", "Bootstrap", "Firebase"],
     github: "https://github.com/LucasButto/store-management",
@@ -199,7 +187,7 @@ export const projects: Project[] = [
       es: "Temporizador de foco y productividad",
     },
     accent: "#ffb870",
-    image: proj8,
+    image: "/projects/proj8.jpg",
     skills: ["React.js", "HTML", "CSS", "JavaScript"],
     github: "https://github.com/LucasButto/Pomodoro",
     link: "https://lucasbutto.github.io/Pomodoro/",
@@ -216,7 +204,7 @@ export const projects: Project[] = [
       es: "API REST para productos",
     },
     accent: "#7dd438",
-    image: proj3,
+    image: "/projects/proj3.jpg",
     alignImage: "left",
     skills: [".NET Core", "MySQL"],
     github: "https://github.com/LucasButto/store-management-api",
@@ -234,7 +222,7 @@ export const projects: Project[] = [
       es: "Nuevos temas en camino",
     },
     accent: "#c49c3d",
-    image: projX,
+    image: "/projects/projX.jpg",
     comingSoon: true,
     description: {
       en: "New projects are currently in the works. Come back soon to see what is coming next.",

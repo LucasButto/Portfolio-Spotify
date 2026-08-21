@@ -37,7 +37,10 @@ export interface Profile {
   name: string;
   role: Localized;
   verified: boolean;
+  /** Circular portrait used by the desktop hero and the player bar. */
   avatar: string;
+  /** Full-bleed photo behind the mobile hero, Spotify artist-page style. */
+  banner: string;
   email: string;
   socials: SocialLink[];
 }
