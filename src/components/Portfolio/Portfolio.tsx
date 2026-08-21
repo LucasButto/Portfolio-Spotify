@@ -87,9 +87,9 @@ const Portfolio = () => {
 
             <div className="portfolio__sections">
               <About />
-              <Skills />
               <Experience />
               <Projects />
+              <Skills />
               <Education />
             </div>
 

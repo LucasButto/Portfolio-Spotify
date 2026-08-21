@@ -1,5 +1,3 @@
-import LaunchRoundedIcon from "@mui/icons-material/LaunchRounded";
-
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
 import { skillGroups } from "@/data";
 import { useI18n } from "@/hooks/useI18n";
@@ -18,16 +16,11 @@ const Skills = () => {
 
       <div className="skills__groups">
         {skillGroups.map((group) => (
-          <div
-            className={`skills__group${group.wide ? " skills__group--wide" : ""}`}
-            key={group.category.en}
-          >
+          <div className="skills__group" key={group.category.en}>
             <h3 className="skills__category">{tr(group.category)}</h3>
 
-            <ul
-              className={`skills__list${group.wide ? " skills__list--columns" : ""}`}
-            >
-              {group.items.map((skill, index) => {
+            <ul className="skills__list">
+              {group.items.map((skill) => {
                 const label = skill.note
                   ? `${skill.name} (${tr(skill.note)})`
                   : skill.name;
@@ -35,13 +28,12 @@ const Skills = () => {
                 return (
                   <li key={skill.name}>
                     <a
-                      className="skills__item"
+                      className="skills__chip"
                       href={skill.link}
                       target="_blank"
                       rel="noreferrer"
                       title={copy.skills.learnMore(skill.name)}
                     >
-                      <span className="skills__index">{index + 1}</span>
                       <img
                         className="skills__logo"
                         src={skill.logo}
@@ -49,10 +41,6 @@ const Skills = () => {
                         loading="lazy"
                       />
                       <span className="skills__name">{label}</span>
-                      <LaunchRoundedIcon
-                        className="skills__launch"
-                        aria-hidden="true"
-                      />
                     </a>
                   </li>
                 );

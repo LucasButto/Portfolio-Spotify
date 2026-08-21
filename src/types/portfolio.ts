@@ -61,12 +61,6 @@ export interface Skill {
 export interface SkillGroup {
   category: Localized;
   items: Skill[];
-  /**
-   * Spans both columns of the skills grid and lays its own items out in two
-   * sub-columns — for a long list that would otherwise leave the row next to
-   * it mostly empty.
-   */
-  wide?: boolean;
 }
 
 export interface ExperienceItem {

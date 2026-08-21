@@ -3,28 +3,19 @@
 
 .skills {
   scroll-margin-top: 16px;
-  padding: 32px 24px;
+  padding: 24px 24px;
 
   @include m.from(v.$bp-md) {
-    padding: 32px;
+    padding: 24px 32px;
   }
 
+  // Categories stack full width so the chips wrap across the whole row —
+  // a 9-item group takes two lines instead of nine.
   &__groups {
-    display: grid;
-    gap: 32px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
     margin-top: 24px;
-
-    @include m.from(v.$bp-lg) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-
-  &__group {
-    &--wide {
-      @include m.from(v.$bp-lg) {
-        grid-column: 1 / -1;
-      }
-    }
   }
 
   &__category {
@@ -37,78 +28,63 @@
 
   &__list {
     display: flex;
-    flex-direction: column;
-    gap: 2px;
+    flex-wrap: wrap;
+    gap: 8px;
     margin-top: 12px;
-
-    // The wide group's list is long enough to leave its row-mate's column
-    // empty below it, so it splits into two sub-columns of its own instead.
-    &--columns {
-      @include m.from(v.$bp-lg) {
-        display: block;
-        column-count: 2;
-        column-gap: 40px;
-
-        li {
-          break-inside: avoid;
-          margin-bottom: 2px;
-        }
-      }
-    }
   }
 
-  &__item {
-    display: flex;
+  &__chip {
+    display: inline-flex;
     align-items: center;
-    gap: 14px;
-    padding: 8px 12px;
-    border-radius: v.$radius-md;
-    transition: background-color 0.2s v.$ease;
+    gap: 8px;
+    padding: 6px 14px 6px 8px;
+    border-radius: v.$radius-full;
+    background-color: var(--secondary);
+
+    // Tighter on phones so three chips share a row instead of two.
+    @include m.until(v.$bp-sm) {
+      gap: 6px;
+      padding: 5px 10px 5px 6px;
+    }
+    transition:
+      background-color 0.2s v.$ease,
+      transform 0.2s v.$ease;
 
     &:hover {
-      background-color: var(--elevated);
-
-      .skills__launch {
-        opacity: 1;
-      }
+      background-color: rgba(255, 255, 255, 0.16);
+      transform: translateY(-1px);
 
       .skills__logo {
         transform: scale(1.12);
       }
     }
-  }
 
-  &__index {
-    width: 16px;
-    font-size: 0.875rem;
-    text-align: center;
-    color: var(--muted-foreground);
-    font-variant-numeric: tabular-nums;
+    &:active {
+      transform: none;
+    }
   }
 
   &__logo {
-    width: 32px;
-    height: 32px;
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
     object-fit: contain;
     transition: transform 0.2s v.$ease;
+
+    @include m.until(v.$bp-sm) {
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &__name {
-    @include m.truncate;
-    flex: 1;
-    font-size: 0.9375rem;
+    font-size: 0.8125rem;
     font-weight: 500;
+    white-space: nowrap;
     color: var(--foreground);
-  }
 
-  &__launch {
-    flex-shrink: 0;
-    opacity: 0;
-    color: var(--muted-foreground);
-    transition: opacity 0.2s v.$ease;
-
-    &.MuiSvgIcon-root {
-      font-size: 1rem;
+    @include m.until(v.$bp-sm) {
+      font-size: 0.75rem;
     }
   }
 }

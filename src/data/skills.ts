@@ -39,7 +39,11 @@ export const skillGroups: SkillGroup[] = [
         logo: "/logos/react.png",
         link: "https://github.com/midudev/aprendiendo-react",
       },
-      { name: "Sass", logo: "/logos/sass.png", link: "https://sass-lang.com/guide/" },
+      {
+        name: "Sass",
+        logo: "/logos/sass.png",
+        link: "https://sass-lang.com/guide/",
+      },
       {
         name: "Bootstrap",
         logo: "/logos/bootstrap.png",
@@ -62,7 +66,7 @@ export const skillGroups: SkillGroup[] = [
     items: [
       {
         name: "Node.js",
-        note: { en: "learning", es: "aprendiendo" },
+        // note: { en: "learning", es: "aprendiendo" },
         logo: "/logos/nodejs.png",
         link: "https://www.youtube.com/playlist?list=PLUofhDIg_38qm2oPOV-IRTTEKyrVBBaU7",
       },
@@ -79,9 +83,52 @@ export const skillGroups: SkillGroup[] = [
     ],
   },
   {
-    // Same item count as Backend on purpose: skills__groups is a 2-col grid
-    // where paired rows share a height, so mismatched sizes (like this
-    // category next to the 9-item Tools list) leave a visible dead gap.
+    category: { en: "Tools", es: "Herramientas" },
+    items: [
+      { name: "Git", logo: "/logos/git.png", link: "https://git-scm.com/doc" },
+      {
+        name: "GitHub",
+        logo: "/logos/github.png",
+        link: "https://github.com/",
+      },
+      {
+        name: "Visual Studio Code",
+        logo: "/logos/visualstudiocode.png",
+        link: "https://code.visualstudio.com/docs",
+      },
+      {
+        name: "Visual Studio 2022",
+        logo: "/logos/visualstudio2022.png",
+        link: "https://docs.microsoft.com/en-us/visualstudio/",
+      },
+      {
+        name: "Jira",
+        logo: "/logos/jira.png",
+        link: "https://www.atlassian.com/es/software/jira/guides/getting-started/introduction#what-is-jira-software",
+      },
+      {
+        name: "Trello",
+        logo: "/logos/trello.png",
+        link: "https://trello.com/guide",
+      },
+      {
+        name: "Firebase",
+        logo: "/logos/firebase.png",
+        link: "https://firebase.google.com/docs",
+      },
+      {
+        name: "Postman",
+        logo: "/logos/postman.png",
+        link: "https://learning.postman.com/docs/getting-started/introduction/",
+      },
+      {
+        name: "Claude",
+        logo: "/logos/claude.png",
+        link: "https://claude.ai/",
+      },
+    ],
+  },
+  {
     category: { en: "AI Tools", es: "Herramientas de IA" },
     items: [
       {
@@ -98,45 +145,6 @@ export const skillGroups: SkillGroup[] = [
         name: "GitHub Copilot",
         logo: "/logos/githubcopilot.png",
         link: "https://github.com/features/copilot",
-      },
-    ],
-  },
-  {
-    category: { en: "Tools", es: "Herramientas" },
-    wide: true,
-    items: [
-      { name: "Git", logo: "/logos/git.png", link: "https://git-scm.com/doc" },
-      { name: "GitHub", logo: "/logos/github.png", link: "https://github.com/" },
-      {
-        name: "Visual Studio Code",
-        logo: "/logos/visualstudiocode.png",
-        link: "https://code.visualstudio.com/docs",
-      },
-      {
-        name: "Visual Studio 2022",
-        logo: "/logos/visualstudio2022.png",
-        link: "https://docs.microsoft.com/en-us/visualstudio/",
-      },
-      {
-        name: "Jira",
-        logo: "/logos/jira.png",
-        link: "https://www.atlassian.com/es/software/jira/guides/getting-started/introduction#what-is-jira-software",
-      },
-      { name: "Trello", logo: "/logos/trello.png", link: "https://trello.com/guide" },
-      {
-        name: "Firebase",
-        logo: "/logos/firebase.png",
-        link: "https://firebase.google.com/docs",
-      },
-      {
-        name: "Postman",
-        logo: "/logos/postman.png",
-        link: "https://learning.postman.com/docs/getting-started/introduction/",
-      },
-      {
-        name: "Claude",
-        logo: "/logos/claude.png",
-        link: "https://claude.ai/",
       },
     ],
   },
