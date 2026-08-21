@@ -3,10 +3,10 @@
 
 .education {
   scroll-margin-top: 16px;
-  padding: 32px 24px;
+  padding: 24px 24px;
 
   @include m.from(v.$bp-md) {
-    padding: 32px;
+    padding: 24px 32px;
   }
 
   &__list {
