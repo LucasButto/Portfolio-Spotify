@@ -25,6 +25,12 @@
     gap: 12px;
     min-width: 0;
 
+    // Absorbs the leftover width so the title's length never pushes the
+    // controls around — without this the track sizes to its own content.
+    @include m.until(v.$bp-md) {
+      flex: 1;
+    }
+
     @include m.from(v.$bp-md) {
       width: 30%;
     }
@@ -134,7 +140,11 @@
     gap: 8px;
     max-width: 45%;
 
+    // Phones hide the progress bar, so this is just the controls: pin them
+    // to the right at their natural width instead of centring in a box that
+    // grows and shrinks with the track beside it.
     @include m.until(v.$bp-sm) {
+      flex: 0 0 auto;
       max-width: none;
     }
   }
