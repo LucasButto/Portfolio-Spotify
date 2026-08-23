@@ -1,18 +1,40 @@
 # Portfolio Spotify Based
 
-This project consists of a responsive portfolio built in React, which was inspired by the user interface and user experience of Spotify. The main objective of the project is to showcase my skills as a developer and allow visitors to explore my projects, experience, and get in touch with me.
+Personal portfolio built with React, TypeScript, Vite and Sass, inspired by the
+Spotify interface. Everything lives on a single page: a fixed sidebar, a
+scrollable content stage and a player bar that "plays" the projects.
 
-## Pages
+## Sections
 
-The portfolio consists of four distinct pages:
+- **Home:** artist-style header with the profile, links and resume.
+- **About:** summary and quick stats (experience, projects, technologies).
+- **Skills:** technologies grouped by category, each one linking to its docs.
+- **Experience:** work history rendered as a track list, with computed durations.
+- **Projects:** grid of covers; clicking a card opens the project detail modal
+  and loads it into the player bar.
+- **Education:** academic background.
 
-- <b>Home:</b> The main page where information about me, my skills, and experience can be found.
-- <b>Projects:</b> A page where all the projects I have worked on can be explored. Details such as the technology used and the results obtained are displayed.
-- <b>Experience:</b> A page where information about my education, previous work experience, and professional career as a developer can be found.
+## Tech stack
 
-## Technologies Used
+- React 18 + TypeScript
+- Vite
+- Sass (one `.scss` file per component + shared tokens/mixins)
+- MUI icons
 
-The portfolio was built using React DOM, which makes it highly interactive and responsive on all devices. In addition, other technologies such as HTML, CSS, and JavaScript were used.
+## Project structure
+
+```
+public/            images, project covers and technology logos
+src/
+├─ components/     one folder per component with its .tsx and .scss
+├─ context/        player state (current project, play/pause, modal)
+├─ data/           profile, skills, experience, projects and education
+├─ hooks/          usePlayer
+├─ i18n/           interface copy for both languages
+├─ styles/         tokens, variables, mixins and global styles
+├─ types/          shared TypeScript types
+└─ utils/          date helpers
+```
 
 ## How to Use the Project
 
@@ -21,20 +43,26 @@ The portfolio was built using React DOM, which makes it highly interactive and r
    > npm install
 3. Run the project using the command
    > npm run dev
-4. Navigate through the portfolio and explore the different pages.
+4. Open the local URL and scroll through the portfolio.
+
+Other useful scripts: `npm run build`, `npm run lint`, `npm run type-check`.
 
 ## Contribution
 
-Contributions are welcome and can be made through pull requests. If you would like to contribute, please create a branch and make your changes in that branch. Make sure the changes are relevant and well-documented.
+Contributions are welcome and can be made through pull requests. If you would
+like to contribute, please create a branch and make your changes in that branch.
+Make sure the changes are relevant and well-documented.
 
 ## Author
 
-This project was developed by me, Butto Lucas. If you have any questions or comments about the project, please do not hesitate to get in touch with me through the contact form or via my GitHub profile.
+This project was developed by me, Butto Lucas. If you have any questions or
+comments about the project, please do not hesitate to get in touch with me
+through my GitHub profile.
 
 ## Screenshot
 
 <p align="center">
-    <img src='./src/Img/proj.jpg' width="600" height="400">
+    <img src='./public/img/proj.jpg' width="600" height="400">
 </p>
 
 ## Test Project

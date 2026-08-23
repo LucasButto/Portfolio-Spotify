@@ -1,0 +1,41 @@
+// ---------------------------------------------------------------------------
+// Design tokens — dark, Spotify inspired palette
+// ---------------------------------------------------------------------------
+
+:root {
+  color-scheme: dark;
+
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Montserrat", "Inter", system-ui, sans-serif;
+
+  --background: #121212;
+  --foreground: #fafafa;
+
+  --card: #1f1f1f;
+  --elevated: #1f1f1f;
+  --elevated-hover: #2a2a2a;
+
+  --primary: #1db954;
+  --primary-hover: #1ed760;
+  --primary-foreground: #121212;
+  --primary-soft: rgba(29, 185, 84, 0.15);
+
+  --secondary: #333333;
+  --secondary-foreground: #fafafa;
+
+  --muted: #333333;
+  --muted-foreground: #a7a7a7;
+
+  --border: rgba(255, 255, 255, 0.1);
+  --ring: #1db954;
+
+  --sidebar: #000000;
+  --sidebar-foreground: #a7a7a7;
+  --sidebar-accent: #1f1f1f;
+  --sidebar-accent-foreground: #fafafa;
+
+  --verified: #3d91f4;
+
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.6);
+}

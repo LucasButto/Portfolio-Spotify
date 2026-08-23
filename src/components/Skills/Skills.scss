@@ -1,0 +1,90 @@
+@use "@/styles/variables" as v;
+@use "@/styles/mixins" as m;
+
+.skills {
+  scroll-margin-top: 16px;
+  padding: 24px 24px;
+
+  @include m.from(v.$bp-md) {
+    padding: 24px 32px;
+  }
+
+  // Categories stack full width so the chips wrap across the whole row —
+  // a 9-item group takes two lines instead of nine.
+  &__groups {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  &__category {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  &__chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px 6px 8px;
+    border-radius: v.$radius-full;
+    background-color: var(--secondary);
+
+    // Tighter on phones so three chips share a row instead of two.
+    @include m.until(v.$bp-sm) {
+      gap: 6px;
+      padding: 5px 10px 5px 6px;
+    }
+    transition:
+      background-color 0.2s v.$ease,
+      transform 0.2s v.$ease;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.16);
+      transform: translateY(-1px);
+
+      .skills__logo {
+        transform: scale(1.12);
+      }
+    }
+
+    &:active {
+      transform: none;
+    }
+  }
+
+  &__logo {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    object-fit: contain;
+    transition: transform 0.2s v.$ease;
+
+    @include m.until(v.$bp-sm) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &__name {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    white-space: nowrap;
+    color: var(--foreground);
+
+    @include m.until(v.$bp-sm) {
+      font-size: 0.75rem;
+    }
+  }
+}

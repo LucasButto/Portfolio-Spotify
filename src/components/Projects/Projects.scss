@@ -1,0 +1,194 @@
+@use "@/styles/variables" as v;
+@use "@/styles/mixins" as m;
+
+.projects {
+  scroll-margin-top: 16px;
+  padding: 24px 24px;
+
+  @include m.from(v.$bp-md) {
+    padding: 24px 32px;
+  }
+
+  &__grid {
+    // One card per row on phones, then two while the sidebar eats horizontal
+    // room, and up to four on wide screens.
+    display: grid;
+    // minmax(0, …) keeps the cover's intrinsic width from inflating the track
+    // on narrow phones.
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+
+    @include m.from(v.$bp-sm) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @include m.from(v.$bp-lg) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    @include m.from(v.$bp-xl) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    // Mobile keeps the list short by default; "Show more" reveals the rest.
+    @include m.until(v.$bp-md) {
+      .projects__card:nth-child(n + 4) {
+        display: none;
+      }
+    }
+
+    &--expanded {
+      @include m.until(v.$bp-md) {
+        .projects__card:nth-child(n + 4) {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border-radius: v.$radius-lg;
+    background-color: var(--card);
+    transition: background-color 0.2s v.$ease;
+
+    &:hover,
+    &:focus-within {
+      background-color: var(--elevated-hover);
+
+      .projects__play {
+        opacity: 1;
+        transform: none;
+      }
+
+      .projects__cover img {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &__cover {
+    position: relative;
+    overflow: hidden;
+    border-radius: v.$radius-md;
+    box-shadow: var(--shadow-md);
+
+    img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      transition: transform 0.4s v.$ease;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+  }
+
+  &__name {
+    @include m.truncate;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--foreground);
+  }
+
+  &__subtitle {
+    @include m.line-clamp(2);
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+  }
+
+  &__tag {
+    padding: 2px 8px;
+    border-radius: v.$radius-full;
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+    font-size: 0.6875rem;
+  }
+
+  &__play {
+    @include m.reset-button;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: v.$radius-full;
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    box-shadow: var(--shadow-lg);
+    opacity: 0;
+    transform: translateY(8px);
+    transition:
+      opacity 0.2s v.$ease,
+      transform 0.2s v.$ease,
+      background-color 0.2s v.$ease;
+
+    svg {
+      font-size: 1.75rem;
+    }
+
+    &:hover {
+      background-color: var(--primary-hover);
+      transform: scale(1.06);
+    }
+
+    &--visible {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  &__overlay {
+    @include m.reset-button;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: v.$radius-lg;
+  }
+
+  &__more {
+    @include m.reset-button;
+    display: none;
+    width: 100%;
+    margin-top: 16px;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: v.$radius-full;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--foreground);
+    transition:
+      border-color 0.2s v.$ease,
+      background-color 0.2s v.$ease;
+
+    @include m.until(v.$bp-md) {
+      display: block;
+    }
+
+    &:hover {
+      border-color: var(--foreground);
+      background-color: var(--elevated);
+    }
+  }
+}
