@@ -2,53 +2,62 @@ import type { EducationItem, ExperienceItem } from "@/types/portfolio";
 
 export const experience: ExperienceItem[] = [
   {
-    role: { en: "FullStack Developer", es: "Desarrollador FullStack" },
-    company: "La Mutual de AMR",
-    start: "2024-11",
+    role: { en: "Full Stack Developer", es: "Desarrollador Full Stack" },
+    company: "Eklekta",
+    start: "2026-03",
     end: null,
     description: {
-      en: "Development and maintenance of fullstack functionalities using Next.js for the frontend and .NET for the backend to enhance user experience and system efficiency. Migration and optimization of databases, transferring structures and data from Adabas to SQL Server while ensuring integrity and performance. Creation and adaptation of new classes and views to integrate the migrated information into the system.",
-      es: "Desarrollo y mantenimiento de funcionalidades fullstack utilizando Next.js en el frontend y .NET en el backend para mejorar la experiencia de usuario y la eficiencia del sistema. Migración y optimización de bases de datos, trasladando estructuras y datos desde Adabas a SQL Server garantizando la integridad y el rendimiento. Creación y adaptación de nuevas clases y vistas para integrar la información migrada al sistema.",
+      en: "I develop custom websites and web applications, from building responsive interfaces to deploying them. I collaborate on process automation, CRM solutions and business integrations, and work with the team to define requirements and design the user experience.",
+      es: "Desarrollo sitios y aplicaciones web a medida, desde la implementación de interfaces responsivas hasta la puesta en producción. Colaboro en automatizaciones de procesos, soluciones CRM e integraciones para negocios, y trabajo con el equipo para definir requerimientos y diseñar la experiencia de usuario.",
     },
-    tags: ["Next.js", ".NET", "SQL Server", "Adabas"],
+    tags: ["React", "TypeScript", "SASS", "Vite"],
+  },
+  {
+    role: { en: "Full Stack Developer", es: "Desarrollador Full Stack" },
+    company: "La Mutual de AMR",
+    start: "2024-10",
+    end: "2026-03",
+    description: {
+      en: "I developed and maintained internal features and C#/.NET services backed by SQL Server for investments, treasury, loans and claims, with a focus on data integrity and business rules. I helped migrate workflows and data from Adabas to SQL Server, implementing CRUD operations, validations and complex queries. I also built reusable components and implemented security measures for a corporate single-page application using Next.js and React.",
+      es: "Desarrollé y mantuve funcionalidades internas y servicios en C#/.NET con SQL Server para inversiones, tesorería, préstamos y reclamos, con foco en la integridad de los datos y las reglas de negocio. Participé en la migración de procesos y datos de Adabas a SQL Server, con operaciones de ABM, validaciones y consultas complejas. También desarrollé componentes reutilizables e implementé medidas de seguridad para una SPA corporativa con Next.js y React.",
+    },
+    tags: ["C#", ".NET", "SQL Server", "Adabas", "Next.js", "React"],
   },
   {
     role: { en: "Frontend Developer", es: "Desarrollador Frontend" },
     company: "La Mutual de AMR",
     start: "2023-11",
-    end: "2024-11",
+    end: "2024-10",
     description: {
-      en: "Development and maintenance of frontend components and pages using Next.js to enhance user experience and improve the efficiency of the Mutual's website. Close collaboration with the design team and other developers to implement responsive and functional designs that meet quality and usability standards. Progressive migration of existing functionalities and pages to Next.js architecture, optimizing performance and scalability.",
-      es: "Desarrollo y mantenimiento de componentes y páginas del frontend utilizando Next.js para mejorar la experiencia de usuario y la eficiencia del sitio web de la Mutual. Colaboración estrecha con el equipo de diseño y otros desarrolladores para implementar diseños responsive y funcionales que cumplan con los estándares de calidad y usabilidad. Migración progresiva de funcionalidades y páginas existentes a la arquitectura de Next.js, optimizando el rendimiento y la escalabilidad.",
+      en: "I built screens and workflows for financial transactions, including transfers and settlements, using Next.js, React and TypeScript. I created reusable, responsive components with SCSS and Bootstrap and documented them in Storybook. I added tests with Jest and React Testing Library and helped improve the frontend's usability and maintainability.",
+      es: "Implementé pantallas y flujos para operaciones financieras, incluidas transferencias y liquidaciones, con Next.js, React y TypeScript. Construí componentes reutilizables y responsivos con SCSS y Bootstrap y los documenté en Storybook. Agregué pruebas con Jest y React Testing Library y colaboré en mejoras de usabilidad y mantenimiento del frontend.",
     },
-    tags: ["Next.js", "React", "TypeScript", "SASS", "Storybook"],
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "SCSS",
+      "Bootstrap",
+      "Storybook",
+      "Jest",
+      "React Testing Library",
+    ],
   },
   {
     role: { en: "Software Developer", es: "Desarrollador de Software" },
-    company: "Neoris",
+    company: "NEORIS",
     start: "2023-10",
-    end: "2023-10",
+    end: "2023-11",
     description: {
-      en: "Development and maintenance of enterprise applications using .NET Framework and .NET Core technologies, with a primary focus on frontend development using Angular for the Dreyfus platform. Close collaboration with business analysts and end-users to understand requirements and design technical solutions that meet the needs of the Dreyfus system. Design and development of interactive and responsive user interfaces that enhance usability and improve the user experience within the Dreyfus system.",
-      es: "Desarrollo y mantenimiento de aplicaciones empresariales utilizando tecnologías .NET Framework y .NET Core, con foco principal en el desarrollo frontend con Angular para la plataforma Dreyfus. Colaboración estrecha con analistas funcionales y usuarios finales para entender los requerimientos y diseñar soluciones técnicas que respondan a las necesidades del sistema Dreyfus. Diseño y desarrollo de interfaces de usuario interactivas y responsive que mejoran la usabilidad y la experiencia dentro del sistema Dreyfus.",
+      en: "I worked in an enterprise software development environment using .NET and completed technical training in .NET and Angular. I helped develop and maintain web applications and user interfaces.",
+      es: "Participé en un entorno de desarrollo de software empresarial con .NET y completé una formación técnica en .NET y Angular. Colaboré en el desarrollo y mantenimiento de interfaces y aplicaciones web.",
     },
-    tags: ["Angular", ".NET Core", ".NET Framework"],
-  },
-  {
-    role: { en: "Internships", es: "Pasantías" },
-    company: "Arrow Computacion",
-    start: "2017-09",
-    end: "2017-09",
-    description: {
-      en: "I completed an internship at Arrow Computación, where I was responsible for assembling and maintaining computer equipment. During my time there, I enhanced my technical skills and developed a deeper understanding of computer components and their functionality.",
-      es: "Realicé una pasantía en Arrow Computación, donde me encargué del armado y el mantenimiento de equipos informáticos. Durante ese período mejoré mis habilidades técnicas y desarrollé un entendimiento más profundo de los componentes de una computadora y su funcionamiento.",
-    },
-    tags: ["Hardware", "Maintenance"],
+    tags: [".NET", "Angular"],
   },
 ];
 
 /** First professional role — used to compute the years of experience shown in the hero. */
-export const careerStart = "2023-9";
+export const careerStart = "2023-10";
 
 export const education: EducationItem[] = [
   {

@@ -25,9 +25,9 @@ export interface NavItem {
 export type SocialIcon = "github" | "linkedin" | "email" | "resume";
 
 export interface SocialLink {
-  name: string;
+  name: string | Localized;
   title: Localized;
-  href: string;
+  href: string | Localized;
   icon: SocialIcon;
   /** Marks the link as a document (the CV) so the browser previews it. */
   isFile?: boolean;

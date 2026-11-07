@@ -3,8 +3,8 @@ import type { AboutInfo, Profile } from "@/types/portfolio";
 export const profile: Profile = {
   name: "Lucas Butto",
   role: {
-    en: "FullStack Developer",
-    es: "Desarrollador FullStack",
+    en: "Full Stack Developer",
+    es: "Desarrollador Full Stack",
   },
   verified: true,
   avatar: "/img/avatar.jpeg",
@@ -30,9 +30,9 @@ export const profile: Profile = {
       icon: "email",
     },
     {
-      name: "Resume",
-      title: { en: "Download my CV", es: "Descargá mi CV" },
-      href: "/LucasButtoCV.pdf",
+      name: { en: "Resume", es: "Currículum" },
+      title: { en: "View my resume", es: "Mirá mi currículum" },
+      href: { en: "/Lucas_Butto_CV_ENG.pdf", es: "/Lucas_Butto_CV_ESP.pdf" },
       icon: "resume",
       isFile: true,
     },
@@ -43,14 +43,12 @@ export const about: AboutInfo = {
   title: { en: "About Me", es: "Sobre mí" },
   paragraphs: {
     en: [
-      "Fullstack developer with experience in migration, maintenance and optimization of websites to Next.js, focused on improving performance and scalability.",
-      "Currently, at AMR Mutual, I work in the development and maintenance of functionalities in both frontend (Next.js) and backend (.NET), optimizing user experience and system efficiency.",
-      "I also participate in the migration of databases from Adabas to SQL Server, creating new classes and views to integrate data into the platform.",
+      "I'm a full stack developer with 3 years of professional experience in web development and enterprise software. I specialize in React, Next.js and TypeScript and have experience with C#/.NET and SQL Server. I've built financial platforms and custom web solutions and worked on data migrations and integrations.",
+      "At Eklekta, I develop custom websites and applications and collaborate on process automation, CRM solutions and integrations. I use AI-assisted development tools to streamline routine tasks, review code and iterate faster.",
     ],
     es: [
-      "Desarrollador fullstack con experiencia en migración, mantenimiento y optimización de sitios web a Next.js, enfocado en mejorar el rendimiento y la escalabilidad.",
-      "Actualmente, en La Mutual de AMR, trabajo en el desarrollo y mantenimiento de funcionalidades tanto en frontend (Next.js) como en backend (.NET), optimizando la experiencia de usuario y la eficiencia del sistema.",
-      "También participo en la migración de bases de datos desde Adabas a SQL Server, creando nuevas clases y vistas para integrar los datos en la plataforma.",
+      "Soy desarrollador full stack con 3 años de experiencia profesional en desarrollo web y sistemas empresariales. Me especializo en React, Next.js y TypeScript y tengo experiencia con C#/.NET y SQL Server. Desarrollé plataformas financieras y soluciones web a medida, y participé en migraciones de datos e integraciones.",
+      "En Eklekta desarrollo sitios y aplicaciones a medida y colaboro en automatizaciones de procesos, soluciones CRM e integraciones. Uso herramientas de IA para agilizar tareas, revisar código y acortar los ciclos de desarrollo.",
     ],
   },
 };

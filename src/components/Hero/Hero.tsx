@@ -100,10 +100,14 @@ const Hero = () => {
               const Icon = socialIcons[social.icon];
               return (
                 <SocialButton
-                  key={social.name}
-                  href={social.href}
+                  key={social.icon}
+                  href={
+                    typeof social.href === "string" ? social.href : tr(social.href)
+                  }
                   title={tr(social.title)}
-                  label={social.name}
+                  label={
+                    typeof social.name === "string" ? social.name : tr(social.name)
+                  }
                   icon={<Icon />}
                   isFile={social.isFile}
                 />
