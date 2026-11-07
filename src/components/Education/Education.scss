@@ -1,0 +1,88 @@
+@use "@/styles/variables" as v;
+@use "@/styles/mixins" as m;
+
+.education {
+  scroll-margin-top: 16px;
+  padding: 24px 24px;
+
+  @include m.from(v.$bp-md) {
+    padding: 24px 32px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+    border-radius: v.$radius-lg;
+    background-color: var(--card);
+    transition: background-color 0.2s v.$ease;
+
+    &:hover {
+      background-color: var(--elevated-hover);
+    }
+  }
+
+  &__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: v.$radius-md;
+    background-color: var(--secondary);
+    color: var(--primary);
+
+    svg {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__body {
+    min-width: 0;
+    flex: 1;
+  }
+
+  &__heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 12px;
+  }
+
+  &__degree {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--foreground);
+  }
+
+  &__type {
+    padding: 2px 10px;
+    border-radius: v.$radius-full;
+    background-color: var(--primary-soft);
+    color: var(--primary);
+    font-size: 0.6875rem;
+    font-weight: 600;
+  }
+
+  &__meta {
+    margin-top: 4px;
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+  }
+
+  &__description {
+    margin-top: 10px;
+    font-size: 0.875rem;
+    line-height: 1.7;
+    color: var(--muted-foreground);
+  }
+}

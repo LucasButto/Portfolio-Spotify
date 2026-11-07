@@ -1,0 +1,170 @@
+@use "@/styles/variables" as v;
+@use "@/styles/mixins" as m;
+
+.sidebar {
+  display: none;
+  flex-direction: column;
+  gap: v.$shell-gap;
+  width: v.$sidebar-width;
+  flex-shrink: 0;
+
+  @include m.from(v.$bp-md) {
+    display: flex;
+  }
+
+  &__panel {
+    background-color: var(--sidebar);
+    border-radius: v.$radius-lg;
+    padding: 12px;
+
+    &--library {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      min-height: 0;
+    }
+  }
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 8px;
+
+    .lang-switcher {
+      margin-left: auto;
+    }
+  }
+
+  &__brand-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: v.$radius-full;
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+
+    svg {
+      font-size: 1.125rem;
+    }
+  }
+
+  &__brand-name {
+    @include m.display-font;
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: var(--foreground);
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 8px;
+  }
+
+  &__link {
+    @include m.reset-button;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: v.$radius-md;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--sidebar-foreground);
+    transition:
+      background-color 0.2s v.$ease,
+      color 0.2s v.$ease;
+
+    svg {
+      font-size: 1.375rem;
+      flex-shrink: 0;
+    }
+
+    &:hover {
+      color: var(--foreground);
+    }
+
+    &--active {
+      background-color: var(--sidebar-accent);
+      color: var(--sidebar-accent-foreground);
+    }
+  }
+
+  &__library-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 8px;
+    color: var(--sidebar-foreground);
+    font-size: 0.875rem;
+    font-weight: 700;
+
+    svg {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__library {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 8px;
+    overflow-y: auto;
+    padding-right: 4px;
+  }
+
+  &__project {
+    @include m.reset-button;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 8px;
+    border-radius: v.$radius-md;
+    text-align: left;
+    transition: background-color 0.2s v.$ease;
+
+    &:hover {
+      background-color: var(--sidebar-accent);
+    }
+
+    img {
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+      border-radius: v.$radius-sm;
+      object-fit: cover;
+    }
+
+    &--playing {
+      .sidebar__project-name {
+        color: var(--primary);
+      }
+    }
+  }
+
+  &__project-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    gap: 2px;
+  }
+
+  &__project-name {
+    @include m.truncate;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--foreground);
+  }
+
+  &__project-type {
+    @include m.truncate;
+    font-size: 0.75rem;
+    color: var(--sidebar-foreground);
+  }
+}

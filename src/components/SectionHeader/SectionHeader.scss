@@ -1,0 +1,22 @@
+@use "@/styles/variables" as v;
+@use "@/styles/mixins" as m;
+
+.section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+
+  &__title {
+    @include m.section-title;
+  }
+
+  &__hint {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+
+    @include m.until(v.$bp-sm) {
+      display: none;
+    }
+  }
+}
