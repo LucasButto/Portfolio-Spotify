@@ -2,6 +2,49 @@ import type { Project } from "@/types/portfolio";
 
 export const projects: Project[] = [
   {
+    id: "eklekta",
+    name: "Eklekta",
+    subtitle: {
+      en: "Digital Solutions Studio",
+      es: "Estudio de soluciones digitales",
+    },
+    accent: "#8571ff",
+    image: "/projects/eklekta.png",
+    alignImage: "center",
+    skills: ["React.js", "TypeScript", "SASS", "Vite"],
+    github: "https://github.com/LucasButto/eklekta",
+    link: "https://eklekta.com.ar/",
+    description: {
+      en: "Corporate website for Eklekta, a studio specializing in web development, automation, custom software and CRM. Built with a modern, responsive approach to showcase its services, projects, and digital solutions.",
+      es: "Sitio web institucional de Eklekta, estudio especializado en desarrollo web, automatizaciones, software a medida y CRM. Desarrollado con un enfoque moderno y responsivo para presentar sus servicios, proyectos y soluciones digitales.",
+    },
+  },
+  {
+    id: "pau",
+    name: "PLANTATE · PAU",
+    subtitle: {
+      en: "Urban Agriculture Platform",
+      es: "Plataforma de agricultura urbana",
+    },
+    accent: "#b0bf52",
+    image: "/projects/pau.png",
+    alignImage: "right",
+    skills: [
+      "React.js",
+      "TypeScript",
+      "MapLibre GL JS",
+      "Tailwind CSS",
+      "Vite",
+      "Wouter",
+    ],
+    github: "https://github.com/LucasButto/Pau",
+    link: "https://pau-red.vercel.app/",
+    description: {
+      en: "Interactive web platform for exploring Rosario's Urban Agriculture Program. Features a map of urban gardens, community farming parks, and local markets, with location details and schedules to connect the community with sustainable local food production.",
+      es: "Plataforma web interactiva para explorar los espacios del Programa de Agricultura Urbana de Rosario. Incluye un mapa de huertas, parques y ferias, con información de ubicaciones, días y horarios para acercar la producción agroecológica a la comunidad.",
+    },
+  },
+  {
     id: "prosperisrl",
     name: "Prosperi SRL",
     subtitle: {
@@ -117,6 +160,23 @@ export const projects: Project[] = [
     },
   },
   {
+    id: "animeguess",
+    name: "AnimeGuess",
+    subtitle: {
+      en: "Anime Mini-Games & Challenges",
+      es: "Minijuegos y desafíos de anime",
+    },
+    accent: "#e3bc5c",
+    image: "/projects/animeguess.png",
+    skills: ["Next.js", "React.js", "TypeScript", "SASS", "Zod"],
+    github: "https://github.com/LucasButto/AmimeGuess",
+    link: "https://animeguess.vercel.app/",
+    description: {
+      en: "Interactive mini-game platform inspired by Pokémon, Dragon Ball, and Naruto. Features multiple game modes, guessing challenges, statistics, and progress tracking, with customized interfaces for each universe and a retro gaming-inspired visual style.",
+      es: "Plataforma interactiva de minijuegos inspirados en Pokémon, Dragon Ball y Naruto. Cuenta con distintos modos de juego, desafíos de adivinanza, estadísticas y seguimiento del progreso, con interfaces personalizadas para cada universo y una estética inspirada en videojuegos retro.",
+    },
+  },
+  {
     id: "bienenstock",
     name: "Bienenstock Corp. ERP System",
     subtitle: {
@@ -143,24 +203,24 @@ export const projects: Project[] = [
       es: "Este sistema está diseñado para gestionar de forma eficiente las operaciones comerciales de la empresa, brindando herramientas integrales para compras, ventas, gestión de inventario, análisis y más. El sistema utiliza tecnologías modernas como React en el frontend, C# y .NET en el backend, y SQL Server como base de datos.",
     },
   },
-  {
-    id: "pokequiz",
-    name: "PokeQuiz",
-    subtitle: {
-      en: "Guess the Pokémon game",
-      es: "Juego de adivinar el Pokémon",
-    },
-    accent: "#f2c004",
-    image: "/projects/proj9.jpg",
-    alignImage: "left",
-    skills: ["React.js", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/LucasButto/PokeQuiz",
-    link: "https://lucasbutto.github.io/PokeQuiz/",
-    description: {
-      en: "This is a React-based game project where you have to guess the name of a Pokémon from its silhouette. The project comes with custom settings where you can choose the regions you want to play with and it saves your best score in localstorage.",
-      es: "Este es un juego desarrollado en React donde tenés que adivinar el nombre de un Pokémon a partir de su silueta. El proyecto incluye una configuración personalizada donde podés elegir las regiones con las que querés jugar y guarda tu mejor puntaje en localstorage.",
-    },
-  },
+  // {
+  //   id: "pokequiz",
+  //   name: "PokeQuiz",
+  //   subtitle: {
+  //     en: "Guess the Pokémon game",
+  //     es: "Juego de adivinar el Pokémon",
+  //   },
+  //   accent: "#f2c004",
+  //   image: "/projects/proj9.jpg",
+  //   alignImage: "left",
+  //   skills: ["React.js", "HTML", "CSS", "JavaScript"],
+  //   github: "https://github.com/LucasButto/PokeQuiz",
+  //   link: "https://lucasbutto.github.io/PokeQuiz/",
+  //   description: {
+  //     en: "This is a React-based game project where you have to guess the name of a Pokémon from its silhouette. The project comes with custom settings where you can choose the regions you want to play with and it saves your best score in localstorage.",
+  //     es: "Este es un juego desarrollado en React donde tenés que adivinar el nombre de un Pokémon a partir de su silueta. El proyecto incluye una configuración personalizada donde podés elegir las regiones con las que querés jugar y guarda tu mejor puntaje en localstorage.",
+  //   },
+  // },
   {
     id: "store-management",
     name: "Store-Management",
