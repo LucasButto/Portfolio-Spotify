@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+import { Analytics } from "@vercel/analytics/react";
+
 import App from "./App";
 import "./styles/global.scss";
 
@@ -13,5 +15,6 @@ if (!container) {
 ReactDOM.createRoot(container).render(
   <React.StrictMode>
     <App />
+    <Analytics />
   </React.StrictMode>,
 );
